@@ -1,0 +1,412 @@
+<script setup>
+
+
+</script>
+<template>
+  <header class="relative">
+    <!-- Top Half: Black Background -->
+    <div>
+      <div class="h-40 w-full bg-black" alt=""></div>
+    </div>
+    <!-- Moved Logo to the Left -->
+
+  </header>
+
+  <body class="flex px-10 min-h-screen items-center justify-center ">
+    <div class=" relative mx-auto flex p-4">
+      <!-- Sidebar -->
+      <div class="w-[350px]  bg-blue-500 text-white ">
+        <div class="logo">
+          <div class=" ">
+            <img src="@/assets/images/logo.jpg" alt="Logo" class="h-24 w-24 rounded-full" />
+          </div>
+        </div>
+        <div class="max-w-sm  bg-white p-6 ">
+          <div class="text-black text-xl font-bold">Eid A Amin Juwel</div>
+          <!-- Status -->
+          <div class="px-3 py-1 my-2 w-fit flex text-xs bg-green-100 items-center rounded-lg">
+            <span class="mr-1 h-1 w-1 rounded-full bg-green-500"></span>
+            <span class="text-green-300 font-semibold	">Available Now (Freeelance)</span>
+          </div>
+
+          <!-- Profile Info -->
+          <div class="text-left">
+            <p class="mb-2 text-sm text-black flex items-start">
+            <div class="icon-style">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+                aria-labelledby="IconBase-title-4dbb2be7-c8ac-4bb5-a474-b805a6c650bd IconBase-description-4dbb2be7-c8ac-4bb5-a474-b805a6c650bd"
+                role="graphics-symbol img" width="100%" height="100%" class="ProfileCard-infoIcon-wVi">
+                <title id="IconBase-title-4dbb2be7-c8ac-4bb5-a474-b805a6c650bd">Info</title>
+                <desc id="IconBase-description-4dbb2be7-c8ac-4bb5-a474-b805a6c650bd"></desc>
+                <g><!--[-->
+                  <path
+                    d="M11.875,14.375H11.25A1.877,1.877,0,0,1,9.375,12.5V9.375H8.75a.625.625,0,0,1,0-1.25h.625a1.251,1.251,0,0,1,1.25,1.25V12.5a.626.626,0,0,0,.625.625h.625a.625.625,0,0,1,0,1.25Z">
+                  </path>
+                  <path d="M9.687,6.875a.938.938,0,1,1,.938-.937A.939.939,0,0,1,9.687,6.875Z"></path>
+                  <path
+                    d="M10,0A10,10,0,1,1,0,10,10.011,10.011,0,0,1,10,0Zm0,18.75A8.75,8.75,0,1,0,1.25,10,8.76,8.76,0,0,0,10,18.75Z">
+                  </path><!--]-->
+                </g>
+              </svg>
+            </div>
+            Logo & Brand Identity Designer | let's talk about your project----WeChat or WhatsApp For Quick Response:
+            +8801795063000:
+            </p>
+
+            <p class="font-medium text-blue-600"><a href="mailto:eidaamin.work@gmail.com">
+                <div class="icon-style">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1234.27 1080"
+                    aria-labelledby="IconBase-title-f03eec97-82d0-416d-b7e7-dd7b45427661 IconBase-description-f03eec97-82d0-416d-b7e7-dd7b45427661"
+                    role="graphics-symbol img" width="100%" height="100%" class="ProfileCard-briefcaseIcon-W5P"
+                    fill="#707070">
+                    <title id="IconBase-title-f03eec97-82d0-416d-b7e7-dd7b45427661">Briefcase</title>
+                    <desc id="IconBase-description-f03eec97-82d0-416d-b7e7-dd7b45427661"></desc>
+                    <g><!--[-->
+                      <g>
+                        <g>
+                          <path
+                            d="m1092.75,1080H141.52c-78.03,0-141.52-63.48-141.52-141.52V372.88c0-78.04,63.49-141.52,141.52-141.52h951.23c78.03,0,141.52,63.48,141.52,141.52v565.59c0,78.04-63.49,141.52-141.52,141.52ZM141.52,308.8c-35.33,0-64.08,28.75-64.08,64.08v565.59c0,35.33,28.74,64.08,64.08,64.08h951.23c35.33,0,64.08-28.74,64.08-64.08V372.88c0-35.33-28.74-64.08-64.08-64.08H141.52Z">
+                          </path>
+                        </g>
+                        <g>
+                          <path
+                            d="m848.5,308.81c-21.38,0-38.72-17.34-38.72-38.72,0-106.22-86.42-192.65-192.64-192.65s-192.64,86.42-192.64,192.65c0,21.38-17.33,38.72-38.72,38.72s-38.72-17.34-38.72-38.72c0-72.14,28.09-139.97,79.1-190.98S544.99,0,617.13,0s139.97,28.09,190.98,79.11c51.01,51.01,79.11,118.84,79.11,190.98,0,21.38-17.34,38.72-38.72,38.72Z">
+                          </path>
+                        </g>
+                        <g>
+                          <path
+                            d="m501.45,617.27H38.72C17.34,617.27,0,599.93,0,578.55s17.33-38.72,38.72-38.72h462.73c21.38,0,38.72,17.34,38.72,38.72s-17.33,38.72-38.72,38.72Z">
+                          </path>
+                        </g>
+                        <g>
+                          <path
+                            d="m1195.55,617.27h-462.73c-21.39,0-38.72-17.34-38.72-38.72s17.33-38.72,38.72-38.72h462.73c21.38,0,38.72,17.34,38.72,38.72s-17.34,38.72-38.72,38.72Z">
+                          </path>
+                        </g>
+                        <g>
+                          <path
+                            d="m617.13,784.29c-41.21,0-79.96-16.04-109.12-45.17-29.18-29.15-45.25-67.92-45.28-109.16v-61.7c.04-85.07,69.27-154.3,154.33-154.35h.08c85.11,0,154.36,69.21,154.4,154.33v61.7c-.04,85.07-69.27,154.3-154.33,154.34h-.08Zm-76.96-154.37c.01,20.56,8.03,39.88,22.57,54.41,14.53,14.52,33.85,22.51,54.39,22.51h.04c42.39-.02,76.9-34.53,76.93-76.92v-61.66c-.02-42.42-34.57-76.93-77-76.9-42.39.02-76.9,34.53-76.92,76.92v61.64Z">
+                          </path>
+                        </g>
+                      </g><!--]-->
+                    </g>
+                  </svg>
+                </div>
+                eidaamin.work@gmail.com
+              </a></p>
+            <p class="text-gray-600">
+            <div class="icon-style">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+                aria-labelledby="IconBase-title-df59dbea-af75-46ea-8a7a-f675cacb836f IconBase-description-df59dbea-af75-46ea-8a7a-f675cacb836f"
+                role="graphics-symbol img" width="100%" height="100%" class="ProfileCard-globeIcon-v6R"
+                stroke="#707070">
+                <title id="IconBase-title-df59dbea-af75-46ea-8a7a-f675cacb836f">Globe Grid</title>
+                <desc id="IconBase-description-df59dbea-af75-46ea-8a7a-f675cacb836f">Globe with grid lines</desc>
+                <g><!--[-->
+                  <g transform="translate(-51.999)">
+                    <rect width="20" height="20" transform="translate(51.999)" fill="none" stroke="none"></rect>
+                    <g transform="translate(53.999 2)">
+                      <path d="M.362,8.362a8,8,0,1,0,8-8,8,8,0,0,0-8,8" transform="translate(-0.362 -0.362)" fill="none"
+                        stroke-linecap="round" stroke-linejoin="round" stroke-width="1.15"></path>
+                      <path d="M5.371,16.163C4.255,14.6,3.5,11.662,3.5,8.341S4.255,2.012,5.371.483"
+                        transform="translate(1.121 -0.305)" fill="none" stroke-linecap="round" stroke-linejoin="round"
+                        stroke-width="1.15"></path>
+                      <path d="M6.819,16.163c1.116-1.564,1.87-4.5,1.87-7.822S7.935,2.012,6.819.483"
+                        transform="translate(2.689 -0.305)" fill="none" stroke-linecap="round" stroke-linejoin="round"
+                        stroke-width="1.15"></path>
+                      <path d="M.362,5.8h16" transform="translate(-0.362 2.205)" fill="none" stroke-linecap="round"
+                        stroke-linejoin="round" stroke-width="1.15"></path>
+                      <path d="M.99,8.33H15.141" transform="translate(-0.066 3.403)" fill="none" stroke-linecap="round"
+                        stroke-linejoin="round" stroke-width="1.15"></path>
+                      <path d="M.99,3.26H15.141" transform="translate(-0.066 1.007)" fill="none" stroke-linecap="round"
+                        stroke-linejoin="round" stroke-width="1.15"></path>
+                    </g>
+                  </g><!--]-->
+                </g>
+              </svg>
+            </div>
+            Bangladesh</p>
+            <p>
+            <div class="icon-style">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13.125 15.194"
+                aria-labelledby="IconBase-title-8fc9d77c-8401-43a6-af1a-f3bdfc4acb4a IconBase-description-8fc9d77c-8401-43a6-af1a-f3bdfc4acb4a"
+                role="graphics-symbol img" width="100%" height="100%" class="ProfileCard-userLinkIcon-zYT" fill="none">
+                <title id="IconBase-title-8fc9d77c-8401-43a6-af1a-f3bdfc4acb4a">LinkOut</title>
+                <desc id="IconBase-description-8fc9d77c-8401-43a6-af1a-f3bdfc4acb4a">opens in a new tab or window</desc>
+                <g><!--[-->
+                  <path
+                    d="M12.657 3.475H7.501A1.875 1.875 0 005.626 5.35v2.344 M9.844 6.288l2.813-2.812L9.844.663 M10.782 9.1v4.688a.938.938 0 01-.937.938H1.407a.938.938 0 01-.937-.937v-7.5a.938.938 0 01.938-.937h1.405">
+                  </path><!--]-->
+                </g>
+              </svg>
+            </div>
+            <a href="https://wa.me/+8801795063000" class="text-blue-500 underline">wa.me/+8801795063000</a>
+            </p>
+          </div>
+
+          <!-- Follow & Message Buttons -->
+          <div class="mt-6">
+            <button class="button-style  bg-blue-100 px-4 py-2 text-white hover:bg-blue-600">
+              <div class="icon-style white-icon">
+                <svg viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg" class="FollowButton-followMark-XKM"
+                  style="">
+                  <path
+                    d="M9,1a8,8,0,1,0,8,8A8,8,0,0,0,9,1Zm5,8.5a.5.5,0,0,1-.5.5H10v3.5a.5.5,0,0,1-.5.5h-1a.5.5,0,0,1-.5-.5V10H4.5A.5.5,0,0,1,4,9.5v-1A.5.5,0,0,1,4.5,8H8V4.5A.5.5,0,0,1,8.5,4h1a.5.5,0,0,1,.5.5V8h3.5a.5.5,0,0,1,.5.5Z">
+                  </path>
+                </svg>
+              </div>
+              Follow
+            </button>
+            <button class="button-style px-4 py-2 text-blue-100 bg-gray-100 border-gray-200 hover:bg-blue-50">
+              <div class="icon-style blue-icon">
+                <svg viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg" class="MessageButton-icon-Gi8">
+                  <path d="M9,10.094l9-6.7615v-.75A.5735.5735,0,0,0,17.4375,2H.5625A.57351.57351,0,0,0,0,2.5835V3.318Z">
+                  </path>
+                  <polygon points="12.389 8.981 18 13.184 18 6.667 18 4.771"></polygon>
+                  <path
+                    d="M11.433,9.7,9.645,11.047a1.086,1.086,0,0,1-1.29,0L6.541,9.6875,0,14.534v.883A.573.573,0,0,0,.5625,16h16.875A.573.573,0,0,0,18,15.417v-.795Z">
+                  </path>
+                  <polygon points="5.582 8.969 0 4.756 0 6.667 0 13.097"></polygon>
+                </svg>
+              </div>
+              Message
+            </button>
+          </div>
+
+          <!-- Hire Options -->
+          <div class="mt-6 text-black border-solid border-2 border-gray-100 rounded-sm p-2">
+            <div class="mb-4 justify-start text-md font-semibold border-solid border-b-2 border-gray-100">Hire Eid A
+              Amin</div>
+            <div class="space-y-2">
+              <div class="flex items-center justify-between border-b-2 border-gray-100">
+                <a href="#" class=" hover:bg-gray-50">
+                  <div class="icon-style">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.997 20"
+                      class="AvailabilityInfoCard-leadingIcon-jcE">
+                      <g transform="translate(-778.375 0.625)">
+                        <g transform="translate(779 0)">
+                          <path
+                            d="M9.014,9.869a2.535,2.535,0,0,1,1.722.672q.019.017.036.036a2.542,2.542,0,0,1-.1,3.544c-.833.827-3.71,1.418-4.279,1.528a.625.625,0,0,1-.732-.733c.111-.569.7-3.443,1.528-4.277A2.521,2.521,0,0,1,9.014,9.869Zm.856,1.574a1.292,1.292,0,0,0-1.784.069l-.007.007a8.39,8.39,0,0,0-.984,2.7,8.361,8.361,0,0,0,2.7-.983l.008-.008A1.284,1.284,0,0,0,9.87,11.443Z"
+                            transform="translate(-0.625 -0.623)"></path>
+                          <path
+                            d="M10.608,5.265A.625.625,0,0,1,10.166,4.2L13.2,1.166a1.85,1.85,0,0,1,2.616,0l.867.867a.625.625,0,0,1-.884.884l-.867-.867a.6.6,0,0,0-.849,0L11.05,5.082A.623.623,0,0,1,10.608,5.265Z"
+                            transform="translate(-0.625 -0.623)"></path>
+                          <path
+                            d="M11.907,12.629a.623.623,0,0,1-.442-.183l-2.6-2.6a.625.625,0,0,1,0-.884L15.8,2.032a2.463,2.463,0,0,1,3.484,3.482l-6.933,6.932A.623.623,0,0,1,11.907,12.629ZM10.192,9.4l1.715,1.715L18.4,4.631a1.222,1.222,0,0,0,0-1.717,1.218,1.218,0,0,0-1.715,0Z"
+                            transform="translate(-0.625 -0.623)"></path>
+                          <path
+                            d="M16.24,8.3a.623.623,0,0,1-.442-.183l-2.6-2.6a.625.625,0,0,1,.884-.884l2.6,2.6A.625.625,0,0,1,16.24,8.3Z"
+                            transform="translate(-0.625 -0.623)"></path>
+                          <path
+                            d="M15.054,20H.937a.937.937,0,0,1-.663-1.6l.5-.5c1.368-1.368,1.36-2.269,1.308-8.134-.011-1.305-.024-2.785-.024-4.569A6.329,6.329,0,0,1,4.506.4c.1-.087.179-.163.235-.218A.625.625,0,0,1,5.183,0H8.89a.625.625,0,1,1,0,1.25H5.431l-.086.078A5.14,5.14,0,0,0,3.308,5.195c0,1.779.013,3.255.024,4.558.053,6,.064,7.274-1.641,9H14.925l.851-.85c1.362-1.362,1.339-2.736,1.3-5.23-.007-.449-.015-.913-.015-1.418a.625.625,0,0,1,1.25,0c0,.495.008.953.015,1.4.043,2.554.073,4.4-1.663,6.135l-.944.943A.937.937,0,0,1,15.054,20Z"
+                            transform="translate(-0.625 -0.623)"></path>
+                        </g>
+                      </g>
+                    </svg>
+                  </div>
+                  <span>Full Time Job</span>
+                </a>
+                <div class="icon-style">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="8" height="13.42" viewBox="0 0 8 13.42"
+                    class="AvailabilityInfoCard-arrow-z0K">
+                    <path
+                      d="M1.28,0a1.07,1.07,0,0,1,.25,0L1.77.1A.91.91,0,0,1,2,.21,1.2,1.2,0,0,1,2.2.38L7.62,5.8a1.52,1.52,0,0,1,.28.43,1.15,1.15,0,0,1,.1.48,1.16,1.16,0,0,1-.1.49,1.34,1.34,0,0,1-.28.42L2.2,13a1.42,1.42,0,0,1-.43.29,1.32,1.32,0,0,1-.48.09,1.37,1.37,0,0,1-.49-.09A1.1,1.1,0,0,1,.38,13a1.34,1.34,0,0,1-.28-.42,1.23,1.23,0,0,1,0-1,1.34,1.34,0,0,1,.28-.42L4.9,6.72.38,2.18A1.34,1.34,0,0,1,.1,1.76a1.23,1.23,0,0,1,0-1A1.34,1.34,0,0,1,.38.38L.58.21A.65.65,0,0,1,.8.1L1,0a1,1,0,0,1,.24,0Z">
+                    </path>
+                  </svg>
+                </div>
+              </div>
+              <div class="flex items-center justify-between ">
+                <a href="#" class=" hover:bg-gray-50">
+                  <div class="icon-style">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+                      class="AvailabilityInfoCard-leadingIcon-jcE">
+                      <g transform="translate(0.625 0.625)">
+                        <g transform="translate(0 0)">
+                          <path
+                            d="M14.375,8.759A5.625,5.625,0,1,1,8.75,14.384,5.631,5.631,0,0,1,14.375,8.759Zm0,10A4.375,4.375,0,1,0,10,14.384,4.38,4.38,0,0,0,14.375,18.759Z"
+                            transform="translate(-0.625 -0.634)"></path>
+                          <path
+                            d="M16.585,15.009h-2.21a.625.625,0,0,1-.625-.625v-2.21a.625.625,0,0,1,1.25,0v1.585h1.585a.625.625,0,0,1,0,1.25Z"
+                            transform="translate(-0.625 -0.634)"></path>
+                          <path d="M8.75,9.384H4.375a.625.625,0,0,1,0-1.25H8.75a.625.625,0,0,1,0,1.25Z"
+                            transform="translate(-0.625 -0.634)"></path>
+                          <path d="M6.875,12.509h-2.5a.625.625,0,0,1,0-1.25h2.5a.625.625,0,0,1,0,1.25Z"
+                            transform="translate(-0.625 -0.634)"></path>
+                          <path d="M6.875,15.634h-2.5a.625.625,0,0,1,0-1.25h2.5a.625.625,0,0,1,0,1.25Z"
+                            transform="translate(-0.625 -0.634)"></path>
+                          <path
+                            d="M8.125,20.009H1.875A1.875,1.875,0,0,1,0,18.134V5.009A1.877,1.877,0,0,1,1.875,3.134H4.427a3.751,3.751,0,0,1,7.4,0h2.552A1.877,1.877,0,0,1,16.25,5.009V6.884a.625.625,0,1,1-1.25,0V5.009a.626.626,0,0,0-.625-.625H11.25a.625.625,0,0,1-.625-.625,2.5,2.5,0,0,0-5,0A.625.625,0,0,1,5,4.384H1.875a.626.626,0,0,0-.625.625V18.134a.625.625,0,0,0,.625.625h6.25a.625.625,0,0,1,0,1.25Z"
+                            transform="translate(-0.625 -0.634)"></path>
+                          <path d="M8.125,4.384a.937.937,0,1,1,.938-.937A.939.939,0,0,1,8.125,4.384Z"
+                            transform="translate(-0.625 -0.634)"></path>
+                        </g>
+                      </g>
+                    </svg>
+                  </div>
+                  <span>Freelance/Project</span>
+                  <p class="">Availability: Now</p>
+                </a>
+                <div class="icon-style">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="8" height="13.42" viewBox="0 0 8 13.42"
+                    class="AvailabilityInfoCard-arrow-z0K">
+                    <path
+                      d="M1.28,0a1.07,1.07,0,0,1,.25,0L1.77.1A.91.91,0,0,1,2,.21,1.2,1.2,0,0,1,2.2.38L7.62,5.8a1.52,1.52,0,0,1,.28.43,1.15,1.15,0,0,1,.1.48,1.16,1.16,0,0,1-.1.49,1.34,1.34,0,0,1-.28.42L2.2,13a1.42,1.42,0,0,1-.43.29,1.32,1.32,0,0,1-.48.09,1.37,1.37,0,0,1-.49-.09A1.1,1.1,0,0,1,.38,13a1.34,1.34,0,0,1-.28-.42,1.23,1.23,0,0,1,0-1,1.34,1.34,0,0,1,.28-.42L4.9,6.72.38,2.18A1.34,1.34,0,0,1,.1,1.76a1.23,1.23,0,0,1,0-1A1.34,1.34,0,0,1,.38.38L.58.21A.65.65,0,0,1,.8.1L1,0a1,1,0,0,1,.24,0Z">
+                    </path>
+                  </svg>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Statistics Section -->
+          <div class="mt-8 text-left">
+            <div class="mb-2 flex justify-between">
+              <span class="text-gray-600">Project Views</span>
+              <span class="font-semibold text-gray-800">71,472</span>
+            </div>
+            <div class="mb-2 flex justify-between">
+              <span class="text-gray-600">Appreciations</span>
+              <span class="font-semibold text-gray-800">13,580</span>
+            </div>
+            <div class="mb-2 flex justify-between">
+              <span class="text-gray-600">Followers</span>
+              <span class="font-semibold text-gray-800">2,963</span>
+            </div>
+            <div class="mb-4 flex justify-between">
+              <span class="text-gray-600">Following</span>
+              <span class="font-semibold text-gray-800">7,001</span>
+            </div>
+          </div>
+
+          <!-- On the Web -->
+          <div class="mt-6">
+            <h3 class="mb-2 text-lg text-black font-semibold">On The Web</h3>
+            <a href="#" class="flex items-center rounded-lg border p-2 text-black hover:bg-gray-50">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" class="mr-2 h-5 w-5"
+                alt="Instagram" />
+              Instagram
+            </a>
+          </div>
+
+          <!-- Teams Section -->
+          <div class="mt-6">
+            <h3 class="mb-2 text-lg font-bold">Teams</h3>
+            <div class="space-y-2">
+              <a href="#" class="flex items-center rounded-lg border p-2 hover:bg-gray-50">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/8/80/Shopno_Logo.png" class="mr-2 h-8 w-8"
+                  alt="Shopno" />
+                <div class="flex-grow">
+                  <p class="font-semibold">Shopno</p>
+                  <p class="text-sm text-gray-500">Jhenaidah, Bangladesh</p>
+                </div>
+                <button class="text-blue-500">+ Follow</button>
+              </a>
+              <a href="#" class="flex items-center rounded-lg border p-2 hover:bg-gray-50">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/e/e8/Efuture_Logo.png" class="mr-2 h-8 w-8"
+                  alt="efuture studio" />
+                <div class="flex-grow">
+                  <p class="font-semibold">efuture studio</p>
+                  <p class="text-sm text-gray-500">Telegraph, TX, USA</p>
+                </div>
+                <button class="text-blue-500">+ Follow</button>
+              </a>
+            </div>
+          </div>
+
+          <!-- Links Section -->
+          <div class="mt-6">
+            <h3 class="mb-2 text-lg font-bold">Links</h3>
+            <div class="space-y-2">
+              <a href="https://wa.me/8801795063000" class="flex items-center rounded-lg border p-2 hover:bg-gray-50">
+                <span class="flex-grow text-gray-700">WhatsApp</span>
+              </a>
+              <a href="#" class="flex items-center rounded-lg border p-2 hover:bg-gray-50">
+                <span class="flex-grow text-gray-700">Skype</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- About Me Section -->
+          <div class="mt-8 text-left">
+            <h3 class="mb-2 text-lg font-bold">About Me | About My Services</h3>
+            <p class="text-gray-700">Available for New Project!</p>
+            <p class="text-gray-700">Logo, Branding Identity, animations, etc</p>
+            <p class="mt-4 text-gray-700">My ultimate goal is to hear from you "I am very satisfied with your design &
+              services". You will get changes until you are 100% satisfied. I will create an awesome logo & brand
+              identity for you.</p>
+            <p class="mt-4 text-gray-500">Member since: March 30, 2019</p>
+            <a href="#" class="mt-2 text-blue-500 underline">Report</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Grid -->
+      <div class="ml-4 flex-1">
+        <div class="grid grid-cols-2 gap-10 md:grid-cols-3 lg:grid-cols-4">
+          <div v-for="i in 16" class="rounded bg-white shadow">
+            <div class="group relative max-w-sm overflow-hidden rounded bg-white shadow-lg">
+              <img class="w-full" src='@/assets/images/3.jpg' alt="Project Image" />
+
+              <!-- Overlay that shows on hover -->
+              <div
+                class="absolute inset-0 flex flex-col items-center justify-center bg-black bg-opacity-50 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+                <div class="mb-2 text-xl font-bold text-white">Kizo - Branding</div>
+                <p class="text-base text-gray-300">Eid A Amin Juwel</p>
+                <div class="mt-4 flex items-center justify-between space-x-6">
+                  <div class="flex items-center space-x-2">
+                    <svg class="h-5 w-5 text-gray-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M14 9l3-3m0 0l-3-3m3 3H3m18 3v12a2 2 0 01-2 2H5a2 2 0 01-2-2V9m16 0l-3 3m0 0l3 3m-3-3H3">
+                      </path>
+                    </svg>
+                    <span class="text-sm text-gray-300">71</span>
+                  </div>
+                  <div class="flex items-center space-x-2">
+                    <svg class="h-5 w-5 text-gray-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M17 20h5v-2a3 3 0 00-3-3h-4.35a3 3 0 00-2.7-1.65h-4.3a3 3 0 00-2.7 1.65H2a3 3 0 00-3 3v2h5">
+                      </path>
+                    </svg>
+                    <span class="text-sm text-gray-300">97</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </body>
+
+</template>
+
+<style>
+.icon-style {
+  margin: 3px 8px 0 0;
+  min-width: 14px;
+  width: 18px;
+  display: inline-block;
+}
+
+.white-icon {
+  fill: white
+}
+
+.blue-icon {
+  fill: blue
+}
+
+.button-style {
+  @apply flex justify-center items-center mb-2 w-full rounded-3xl font-bold;
+}
+
+.logo {
+  position: absolute;
+  left: 3rem;
+  transform: translateY(-80%);
+}
+</style>
