@@ -340,9 +340,9 @@ const toggleOverlay = () => {
       <!-- Grid -->
       <div class="ml-4 sm:mt-0 md:mt-12 flex-1">
         <div class="grid grid-cols-1 max-h-screen  md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-10">
-          <div v-for="thumb in thumbnails" class="rounded bg-white shadow ">
+          <div v-for="thumb in thumbnails" class="rounded bg-white  ">
             <div
-              class="group relative max-w-sm overflow-hidden rounded bg-white shadow-lg hover:cursor-pointer zoom hover:scale-110 ">
+              class="group relative max-w-sm overflow-hidden rounded bg-white  hover:cursor-pointer zoom hover:scale-110 ">
               <img @click="setDetail(thumb)" class="w-full" :src="`/assets/thumbnails/${thumb}.png`" alt="Project Image" />
 
               <!-- Overlay that shows on hover -->
@@ -370,7 +370,7 @@ const toggleOverlay = () => {
        <!-- Overlay List -->
        <transition name="fade">
        <div v-show="isOverlayOpen" @click.self="toggleOverlay" class="overlay fixed inset-0 bg-black bg-opacity-85 flex justify-center items-center">
-            <div class="bg-white p-5 rounded shadow-lg h-screen overflow-y-auto" style="width: 70%;">
+            <div class="bg-white p-5 rounded  h-screen overflow-y-auto" style="width: 70%;">
                 <ul class="space-y-2">
                   <li v-for="item in getDetailImage(folderName)" :key="item" class="text-gray-700">
                       <img class="w-full " :src="item" alt="Project Image" />
@@ -402,8 +402,6 @@ const toggleOverlay = () => {
         <a href="#" class="hover:underline">TOU</a>
         <a href="#" class="hover:underline">Privacy</a>
         <a href="#" class="hover:underline">Community</a>
-        <a href="#" class="hover:underline">Cookie preferences</a>
-        <a href="#" class="hover:underline">Do not sell or share my personal information</a>
       </div>
     </div>
   </footer>
