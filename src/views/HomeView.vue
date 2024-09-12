@@ -6,32 +6,32 @@
   <header class="relative">
     <!-- Top Half: Black Background -->
     <div>
-      <div class="h-40 w-full bg-black" alt=""></div>
+        <img class="h-40 w-full" src="https://mir-s3-cdn-cf.behance.net/5bef2879134b0d338db0fe737706d499/944ddc4d-400c-4a31-acb7-739f46bff573_rwc_-2x37x3200x334x3200.png?h=d162119eb6baca69caa22e21dccf2de9" alt="">
     </div>
     <!-- Moved Logo to the Left -->
 
   </header>
 
   <body class="flex px-10 min-h-screen items-center justify-center ">
-    <div class=" relative mx-auto flex p-4">
+    <div class=" relative mx-auto container-main sm:block md:flex p-4">
       <!-- Sidebar -->
-      <div class="w-[350px]  bg-blue-500 text-white ">
+      <div class="w-[350px] sm:m-auto  bg-blue-500 text-white ">
         <div class="logo">
           <div class=" ">
-            <img src="@/assets/images/logo.jpg" alt="Logo" class="h-24 w-24 rounded-full" />
+            <img src="@/assets/images/logo.jpg" alt="Logo" class=" rounded-full border-white border-4" />
           </div>
         </div>
         <div class="max-w-sm  bg-white p-6 ">
-          <div class="text-black text-xl font-bold">Eid A Amin Juwel</div>
+          <div class="text-black text-2xl font-bold">Eid A Amin Juwel</div>
           <!-- Status -->
-          <div class="px-3 py-1 my-2 w-fit flex text-xs bg-green-100 items-center rounded-lg">
+          <div class="px-3 py-2 my-2 mb-4 w-fit flex text-sm bg-green-100 items-center rounded-xl">
             <span class="mr-1 h-1 w-1 rounded-full bg-green-500"></span>
-            <span class="text-green-300 font-semibold	">Available Now (Freeelance)</span>
+            <span class="text-green-300 font-semibold	">Available Now</span>
           </div>
 
           <!-- Profile Info -->
           <div class="text-left">
-            <p class="mb-2 text-sm text-black flex items-start">
+            <p class="mb-2 text-sm text-black flex md:items-start sm:items-center">
             <div class="icon-style">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
                 aria-labelledby="IconBase-title-4dbb2be7-c8ac-4bb5-a474-b805a6c650bd IconBase-description-4dbb2be7-c8ac-4bb5-a474-b805a6c650bd"
@@ -53,7 +53,7 @@
             +8801795063000:
             </p>
 
-            <p class="font-medium text-blue-600"><a href="mailto:eidaamin.work@gmail.com">
+            <p class="font-medium text-black"><a href="mailto:eidaamin.work@gmail.com">
                 <div class="icon-style">
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1234.27 1080"
                     aria-labelledby="IconBase-title-f03eec97-82d0-416d-b7e7-dd7b45427661 IconBase-description-f03eec97-82d0-416d-b7e7-dd7b45427661"
@@ -128,26 +128,30 @@
             Bangladesh</p>
             <p>
             <div class="icon-style">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13.125 15.194"
-                aria-labelledby="IconBase-title-8fc9d77c-8401-43a6-af1a-f3bdfc4acb4a IconBase-description-8fc9d77c-8401-43a6-af1a-f3bdfc4acb4a"
-                role="graphics-symbol img" width="100%" height="100%" class="ProfileCard-userLinkIcon-zYT" fill="none">
-                <title id="IconBase-title-8fc9d77c-8401-43a6-af1a-f3bdfc4acb4a">LinkOut</title>
-                <desc id="IconBase-description-8fc9d77c-8401-43a6-af1a-f3bdfc4acb4a">opens in a new tab or window</desc>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+                aria-labelledby="IconBase-title-4dbb2be7-c8ac-4bb5-a474-b805a6c650bd IconBase-description-4dbb2be7-c8ac-4bb5-a474-b805a6c650bd"
+                role="graphics-symbol img" width="100%" height="100%" class="ProfileCard-infoIcon-wVi">
+                <title id="IconBase-title-4dbb2be7-c8ac-4bb5-a474-b805a6c650bd">Info</title>
+                <desc id="IconBase-description-4dbb2be7-c8ac-4bb5-a474-b805a6c650bd"></desc>
                 <g><!--[-->
                   <path
-                    d="M12.657 3.475H7.501A1.875 1.875 0 005.626 5.35v2.344 M9.844 6.288l2.813-2.812L9.844.663 M10.782 9.1v4.688a.938.938 0 01-.937.938H1.407a.938.938 0 01-.937-.937v-7.5a.938.938 0 01.938-.937h1.405">
+                    d="M11.875,14.375H11.25A1.877,1.877,0,0,1,9.375,12.5V9.375H8.75a.625.625,0,0,1,0-1.25h.625a1.251,1.251,0,0,1,1.25,1.25V12.5a.626.626,0,0,0,.625.625h.625a.625.625,0,0,1,0,1.25Z">
+                  </path>
+                  <path d="M9.687,6.875a.938.938,0,1,1,.938-.937A.939.939,0,0,1,9.687,6.875Z"></path>
+                  <path
+                    d="M10,0A10,10,0,1,1,0,10,10.011,10.011,0,0,1,10,0Zm0,18.75A8.75,8.75,0,1,0,1.25,10,8.76,8.76,0,0,0,10,18.75Z">
                   </path><!--]-->
                 </g>
               </svg>
             </div>
-            <a href="https://wa.me/+8801795063000" class="text-blue-500 underline">wa.me/+8801795063000</a>
+            <a href="https://wa.me/+8801795063000" class="text-black underline">wa.me/+8801795063000</a>
             </p>
           </div>
 
           <!-- Follow & Message Buttons -->
           <div class="mt-6">
             <button class="button-style  bg-blue-100 px-4 py-2 text-white hover:bg-blue-600">
-              <div class="icon-style white-icon">
+              <div class="icon-style-large white-icon">
                 <svg viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg" class="FollowButton-followMark-XKM"
                   style="">
                   <path
@@ -158,7 +162,7 @@
               Follow
             </button>
             <button class="button-style px-4 py-2 text-blue-100 bg-gray-100 border-gray-200 hover:bg-blue-50">
-              <div class="icon-style blue-icon">
+              <div class="icon-style-large blue-icon">
                 <svg viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg" class="MessageButton-icon-Gi8">
                   <path d="M9,10.094l9-6.7615v-.75A.5735.5735,0,0,0,17.4375,2H.5625A.57351.57351,0,0,0,0,2.5835V3.318Z">
                   </path>
@@ -174,13 +178,13 @@
           </div>
 
           <!-- Hire Options -->
-          <div class="mt-6 text-black border-solid border-2 border-gray-100 rounded-sm p-2">
-            <div class="mb-4 justify-start text-md font-semibold border-solid border-b-2 border-gray-100">Hire Eid A
+          <div class="mt-6 text-black border-solid border-2 border-gray-100 rounded-sm p-3 hidden-mobile">
+            <div class="pb-2 justify-start text-md font-semibold border-solid border-b-2 border-gray-100">Hire Eid A
               Amin</div>
             <div class="space-y-2">
-              <div class="flex items-center justify-between border-b-2 border-gray-100">
+              <div class="flex items-center  justify-between py-2 border-b-2 border-gray-100">
                 <a href="#" class=" hover:bg-gray-50">
-                  <div class="icon-style">
+                  <div class="icon-style-large blue-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.997 20"
                       class="AvailabilityInfoCard-leadingIcon-jcE">
                       <g transform="translate(-778.375 0.625)">
@@ -204,9 +208,9 @@
                       </g>
                     </svg>
                   </div>
-                  <span>Full Time Job</span>
+                  <span class="font-semibold hover:text-blue-100">Full Time Job</span>
                 </a>
-                <div class="icon-style">
+                <div class="icon-style fill-blue-300">
                   <svg xmlns="http://www.w3.org/2000/svg" width="8" height="13.42" viewBox="0 0 8 13.42"
                     class="AvailabilityInfoCard-arrow-z0K">
                     <path
@@ -217,7 +221,7 @@
               </div>
               <div class="flex items-center justify-between ">
                 <a href="#" class=" hover:bg-gray-50">
-                  <div class="icon-style">
+                  <div class="icon-style-large blue-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
                       class="AvailabilityInfoCard-leadingIcon-jcE">
                       <g transform="translate(0.625 0.625)">
@@ -243,10 +247,10 @@
                       </g>
                     </svg>
                   </div>
-                  <span>Freelance/Project</span>
-                  <p class="">Availability: Now</p>
+                  <span class="font-semibold hover:text-blue-100">Freelance/Project</span>
+                  <p class="ml-7 text-xs">Availability: Now</p>
                 </a>
-                <div class="icon-style">
+                <div class="icon-style fill-blue-300">
                   <svg xmlns="http://www.w3.org/2000/svg" width="8" height="13.42" viewBox="0 0 8 13.42"
                     class="AvailabilityInfoCard-arrow-z0K">
                     <path
@@ -260,7 +264,7 @@
           </div>
 
           <!-- Statistics Section -->
-          <div class="mt-8 text-left">
+          <div class="mt-8 text-left hidden-mobile">
             <div class="mb-2 flex justify-between">
               <span class="text-gray-600">Project Views</span>
               <span class="font-semibold text-gray-800">71,472</span>
@@ -280,7 +284,7 @@
           </div>
 
           <!-- On the Web -->
-          <div class="mt-6">
+          <div class="mt-6 hidden-mobile">
             <h3 class="mb-2 text-lg text-black font-semibold">On The Web</h3>
             <a href="#" class="flex items-center rounded-lg border p-2 text-black hover:bg-gray-50">
               <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" class="mr-2 h-5 w-5"
@@ -290,7 +294,7 @@
           </div>
 
           <!-- Teams Section -->
-          <div class="mt-6">
+          <!-- <div class="mt-6">
             <h3 class="mb-2 text-lg font-bold">Teams</h3>
             <div class="space-y-2">
               <a href="#" class="flex items-center rounded-lg border p-2 hover:bg-gray-50">
@@ -312,10 +316,10 @@
                 <button class="text-blue-500">+ Follow</button>
               </a>
             </div>
-          </div>
+          </div> -->
 
           <!-- Links Section -->
-          <div class="mt-6">
+          <!-- <div class="mt-6">
             <h3 class="mb-2 text-lg font-bold">Links</h3>
             <div class="space-y-2">
               <a href="https://wa.me/8801795063000" class="flex items-center rounded-lg border p-2 hover:bg-gray-50">
@@ -325,10 +329,10 @@
                 <span class="flex-grow text-gray-700">Skype</span>
               </a>
             </div>
-          </div>
+          </div> -->
 
           <!-- About Me Section -->
-          <div class="mt-8 text-left">
+          <div class="mt-8 text-left hidden-mobile">
             <h3 class="mb-2 text-lg font-bold">About Me | About My Services</h3>
             <p class="text-gray-700">Available for New Project!</p>
             <p class="text-gray-700">Logo, Branding Identity, animations, etc</p>
@@ -342,38 +346,28 @@
       </div>
 
       <!-- Grid -->
-      <div class="ml-4 flex-1">
+      <div class="ml-4 sm:mt-0 md:mt-12 flex-1">
         <div class="grid grid-cols-2 gap-10 md:grid-cols-3 lg:grid-cols-4">
           <div v-for="i in 16" class="rounded bg-white shadow">
-            <div class="group relative max-w-sm overflow-hidden rounded bg-white shadow-lg">
-              <img class="w-full" src='@/assets/images/3.jpg' alt="Project Image" />
+            <div class="group relative max-w-sm overflow-hidden rounded bg-white shadow-lg hover:cursor-pointer zoom hover:scale-110 ">
+              <img class="w-full " src='@/assets/images/3.jpg' alt="Project Image" />
 
               <!-- Overlay that shows on hover -->
-              <div
+              <!-- <div
                 class="absolute inset-0 flex flex-col items-center justify-center bg-black bg-opacity-50 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
                 <div class="mb-2 text-xl font-bold text-white">Kizo - Branding</div>
                 <p class="text-base text-gray-300">Eid A Amin Juwel</p>
                 <div class="mt-4 flex items-center justify-between space-x-6">
-                  <div class="flex items-center space-x-2">
-                    <svg class="h-5 w-5 text-gray-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-                      xmlns="http://www.w3.org/2000/svg">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                        d="M14 9l3-3m0 0l-3-3m3 3H3m18 3v12a2 2 0 01-2 2H5a2 2 0 01-2-2V9m16 0l-3 3m0 0l3 3m-3-3H3">
-                      </path>
-                    </svg>
+                  <div class="flex items-center space-x-2 fill-white">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0.5 0.5 16 16" class="Appreciations-icon-Z4i ProjectCoverNeue-icon-zWO"><path fill="none" d="M.5.5h16v16H.5z"></path><path d="M.5 7.5h3v8h-3zM7.207 15.207c.193.19.425.29.677.293H12c.256 0 .512-.098.707-.293l2.5-2.5c.19-.19.288-.457.293-.707V8.5c0-.553-.445-1-1-1h-5L11 5s.5-.792.5-1.5v-1c0-.553-.447-1-1-1l-1 2-4 4v6l1.707 1.707z"></path></svg>
                     <span class="text-sm text-gray-300">71</span>
                   </div>
-                  <div class="flex items-center space-x-2">
-                    <svg class="h-5 w-5 text-gray-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-                      xmlns="http://www.w3.org/2000/svg">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                        d="M17 20h5v-2a3 3 0 00-3-3h-4.35a3 3 0 00-2.7-1.65h-4.3a3 3 0 00-2.7 1.65H2a3 3 0 00-3 3v2h5">
-                      </path>
-                    </svg>
+                  <div class="flex items-center space-x-2 fill-white">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" class="ProjectCoverNeue-icon-zWO"><path d="M8.5 3.5c-5 0-8 5-8 5s3 5 8 5 8-5 8-5-3-5-8-5zm0 7c-1.105 0-2-.896-2-2 0-1.106.895-2 2-2 1.104 0 2 .894 2 2 0 1.104-.896 2-2 2z"></path></svg>
                     <span class="text-sm text-gray-300">97</span>
                   </div>
                 </div>
-              </div>
+              </div> -->
             </div>
           </div>
 
@@ -388,6 +382,12 @@
 .icon-style {
   margin: 3px 8px 0 0;
   min-width: 14px;
+  width: 14px;
+  display: inline-block;
+}
+.icon-style-large {
+  margin: 3px 8px 0 0;
+  min-width: 18px;
   width: 18px;
   display: inline-block;
 }
@@ -397,7 +397,7 @@
 }
 
 .blue-icon {
-  fill: blue
+  @apply fill-blue-100;
 }
 
 .button-style {
@@ -406,7 +406,29 @@
 
 .logo {
   position: absolute;
-  left: 3rem;
+  left: 2.5rem;
   transform: translateY(-80%);
+}
+.logo img {
+  width: 6.5rem;
+  height: 6.5rem;
+}
+.zoom {
+  transition: transform .2s; /* Animation */
+}
+/* @media only screen and (max-width: 1920px) {
+ .container-main {
+  display: flex;
+ }
+}
+@media only screen and (max-width: 1200px) {
+  .container-main {
+  display: block;
+ }
+} */
+@media only screen and (max-width: 600px) {
+ .hidden-mobile {
+  display: none;
+ }
 }
 </style>
