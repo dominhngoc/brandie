@@ -1,36 +1,58 @@
 <script setup>
+import { reactive, ref,  } from 'vue'
+const isOverlayOpen =ref(false)
 
+const folderName = ref("");
+const setDetail = (name) => {
+  folderName.value = name;
+  toggleOverlay();
+}
+const thumbnails = reactive([
+  'kuva-28','kizo-29', 'latte-6',  'tree-45'
+])
+const getDetailImage = () => {
+  const length = folderName.value.split('-')[1]
+  let arr = []
+  for(let i = 1; i <= length ; i++){
+    arr.push(`/assets/images/${folderName.value}/${i}.png`)
+  }
+  return arr
+}
+const toggleOverlay = () => {
+  isOverlayOpen.value = !isOverlayOpen.value;
+}
 
 </script>
 <template>
   <header class="relative">
     <!-- Top Half: Black Background -->
-    <div>
-        <img class="h-40 w-full" src="https://mir-s3-cdn-cf.behance.net/5bef2879134b0d338db0fe737706d499/944ddc4d-400c-4a31-acb7-739f46bff573_rwc_-2x37x3200x334x3200.png?h=d162119eb6baca69caa22e21dccf2de9" alt="">
+    <div class="h-[120px] w-full bg-black flex justify-end">
+      <span class="word-art word-art-position">Everything is Designed !!</span>
+    </div>
+    <div class="logo">
+          <router-link to="/"> <img src="@/assets/images/logo.jpg" alt="Logo"
+              class=" rounded-full border-white border-4" /></router-link>
     </div>
     <!-- Moved Logo to the Left -->
 
   </header>
 
-  <body class="flex px-10 min-h-screen items-center justify-center ">
+  <body class="flex px-10 min-h-screen items-center justify-center bg-white">
     <div class=" relative mx-auto container-main sm:block md:flex p-4">
       <!-- Sidebar -->
-      <div class="w-[350px] sm:m-auto  bg-blue-500 text-white ">
-        <div class="logo">
-          <div class=" ">
-            <img src="@/assets/images/logo.jpg" alt="Logo" class=" rounded-full border-white border-4" />
-          </div>
-        </div>
-        <div class="max-w-sm  bg-white p-6 ">
+      <div class="w-[100%] md:w-[350px] sm:m-auto  text-white text-center md:text-left">
+        
+        <div class="max-w-sm bg-white p-6">
           <div class="text-black text-2xl font-bold">Eid A Amin Juwel</div>
           <!-- Status -->
-          <div class="px-3 py-2 my-2 mb-4 w-fit flex text-sm bg-green-100 items-center rounded-xl">
+          <div
+            class="px-3 py-2 w-fit flex text-sm bg-green-100 items-center rounded-xl m-auto md:m-0 md:mx-0 md:my-2 md:mb-4 ">
             <span class="mr-1 h-1 w-1 rounded-full bg-green-500"></span>
             <span class="text-green-300 font-semibold	">Available Now</span>
           </div>
 
           <!-- Profile Info -->
-          <div class="text-left">
+          <div>
             <p class="mb-2 text-sm text-black flex md:items-start sm:items-center">
             <div class="icon-style">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
@@ -146,35 +168,6 @@
             </div>
             <a href="https://wa.me/+8801795063000" class="text-black underline">wa.me/+8801795063000</a>
             </p>
-          </div>
-
-          <!-- Follow & Message Buttons -->
-          <div class="mt-6">
-            <button class="button-style  bg-blue-100 px-4 py-2 text-white hover:bg-blue-600">
-              <div class="icon-style-large white-icon">
-                <svg viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg" class="FollowButton-followMark-XKM"
-                  style="">
-                  <path
-                    d="M9,1a8,8,0,1,0,8,8A8,8,0,0,0,9,1Zm5,8.5a.5.5,0,0,1-.5.5H10v3.5a.5.5,0,0,1-.5.5h-1a.5.5,0,0,1-.5-.5V10H4.5A.5.5,0,0,1,4,9.5v-1A.5.5,0,0,1,4.5,8H8V4.5A.5.5,0,0,1,8.5,4h1a.5.5,0,0,1,.5.5V8h3.5a.5.5,0,0,1,.5.5Z">
-                  </path>
-                </svg>
-              </div>
-              Follow
-            </button>
-            <button class="button-style px-4 py-2 text-blue-100 bg-gray-100 border-gray-200 hover:bg-blue-50">
-              <div class="icon-style-large blue-icon">
-                <svg viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg" class="MessageButton-icon-Gi8">
-                  <path d="M9,10.094l9-6.7615v-.75A.5735.5735,0,0,0,17.4375,2H.5625A.57351.57351,0,0,0,0,2.5835V3.318Z">
-                  </path>
-                  <polygon points="12.389 8.981 18 13.184 18 6.667 18 4.771"></polygon>
-                  <path
-                    d="M11.433,9.7,9.645,11.047a1.086,1.086,0,0,1-1.29,0L6.541,9.6875,0,14.534v.883A.573.573,0,0,0,.5625,16h16.875A.573.573,0,0,0,18,15.417v-.795Z">
-                  </path>
-                  <polygon points="5.582 8.969 0 4.756 0 6.667 0 13.097"></polygon>
-                </svg>
-              </div>
-              Message
-            </button>
           </div>
 
           <!-- Hire Options -->
@@ -340,17 +333,17 @@
               services". You will get changes until you are 100% satisfied. I will create an awesome logo & brand
               identity for you.</p>
             <p class="mt-4 text-gray-500">Member since: March 30, 2019</p>
-            <a href="#" class="mt-2 text-blue-500 underline">Report</a>
           </div>
         </div>
       </div>
 
       <!-- Grid -->
       <div class="ml-4 sm:mt-0 md:mt-12 flex-1">
-        <div class="grid grid-cols-2 gap-10 md:grid-cols-3 lg:grid-cols-4">
-          <div v-for="i in 16" class="rounded bg-white shadow">
-            <div class="group relative max-w-sm overflow-hidden rounded bg-white shadow-lg hover:cursor-pointer zoom hover:scale-110 ">
-              <img class="w-full " src='@/assets/images/3.jpg' alt="Project Image" />
+        <div class="grid grid-cols-1 max-h-screen  md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-10">
+          <div v-for="thumb in thumbnails" class="rounded bg-white shadow ">
+            <div
+              class="group relative max-w-sm overflow-hidden rounded bg-white shadow-lg hover:cursor-pointer zoom hover:scale-110 ">
+              <img @click="setDetail(thumb)" class="w-full" :src="`/assets/thumbnails/${thumb}.png`" alt="Project Image" />
 
               <!-- Overlay that shows on hover -->
               <!-- <div
@@ -373,9 +366,47 @@
 
         </div>
       </div>
+    
+       <!-- Overlay List -->
+       <transition name="fade">
+       <div v-show="isOverlayOpen" @click.self="toggleOverlay" class="overlay fixed inset-0 bg-black bg-opacity-85 flex justify-center items-center">
+            <div class="bg-white p-5 rounded shadow-lg h-screen overflow-y-auto" style="width: 70%;">
+                <ul class="space-y-2">
+                  <li v-for="item in getDetailImage(folderName)" :key="item" class="text-gray-700">
+                      <img class="w-full " :src="item" alt="Project Image" />
+                    </li>
+                </ul>
+            </div>
+        </div>
+        </transition>
+       <!-- <div v-if="isOverlayOpen" class="fixed inset-0 bg-gray-800 bg-opacity-75 flex justify-center items-center">
+            <div class="bg-white p-5 rounded shadow-lg h-full w-4/5 sm:w-3/5 lg:w-3/5">
+                <ul class="space-y-2">
+                    <li v-for="i in 29" :key="item" class="text-gray-700">
+                      <img class="w-full " :src="`/assets/images/kuzo-29/${i}.png`" alt="Project Image" />
+                    </li>
+                </ul>
+            </div>
+        </div> -->
+
     </div>
   </body>
-
+   <footer class="bg-black text-white py-6 px-8 text-sm">
+    <div class="container mx-auto flex justify-between items-center">
+      <div class="flex items-center space-x-2">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Adobe_Corporate_Logo.png/768px-Adobe_Corporate_Logo.png" alt="Adobe Logo" class="h-6">
+        <span>&copy; 2024 Adobe Inc. All rights reserved.</span>
+      </div>
+      <div class="flex space-x-4">
+        <a href="#" class="hover:underline">English</a>
+        <a href="#" class="hover:underline">TOU</a>
+        <a href="#" class="hover:underline">Privacy</a>
+        <a href="#" class="hover:underline">Community</a>
+        <a href="#" class="hover:underline">Cookie preferences</a>
+        <a href="#" class="hover:underline">Do not sell or share my personal information</a>
+      </div>
+    </div>
+  </footer>
 </template>
 
 <style>
@@ -385,6 +416,7 @@
   width: 14px;
   display: inline-block;
 }
+
 .icon-style-large {
   margin: 3px 8px 0 0;
   min-width: 18px;
@@ -406,15 +438,56 @@
 
 .logo {
   position: absolute;
-  left: 2.5rem;
-  transform: translateY(-80%);
+  transform: translate(80%, -60%);
+  z-index: 10;
+}
+.overlay {
+  z-index: 99;
 }
 .logo img {
-  width: 6.5rem;
-  height: 6.5rem;
+  width: 5.5rem;
+  height: 5.5rem;
 }
+@media only screen and (max-width: 600px) {
+  .logo {
+    transform: translate(-50%, -60%);
+    left:50%;
+  }
+
+
+}
+
+
+
 .zoom {
-  transition: transform .2s; /* Animation */
+  transition: transform .2s;
+  /* Animation */
+}
+
+.word-art {
+  font-family: 'Arial', sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  letter-spacing: 4px;
+  word-spacing: 4px;
+  color: gainsboro;
+  text-shadow:
+    3px 3px 0 #000,
+    /* black outline */
+    -3px 3px 0 #000,
+    3px -3px 0 #000,
+    -3px -3px 0 #000,
+    6px 6px 0 rgba(0, 0, 0, 0.5);
+  /* 3D effect */
+}
+.word-art-position {
+  margin-right: 10%;
+  margin-top: 20px;
+}
+@media only screen and (max-width: 600px) {
+  .word-art {
+    font-size: 12px;
+  }
 }
 /* @media only screen and (max-width: 1920px) {
  .container-main {
@@ -427,8 +500,17 @@
  }
 } */
 @media only screen and (max-width: 600px) {
- .hidden-mobile {
-  display: none;
- }
+  .hidden-mobile {
+    display: none;
+  }
 }
+
+.fade-enter-active, .fade-leave-active {
+  transition: opacity 0.5s;
+}
+
+.fade-enter, .fade-leave-to /* .fade-leave-active in Vue 2.1.8 and earlier */ {
+  opacity: 0;
+}
+
 </style>
