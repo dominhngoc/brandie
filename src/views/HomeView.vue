@@ -393,7 +393,7 @@ const toggleOverlay = () => {
       <div class="ml-0 md:ml-8 sm:mt-0 md:mt-12 flex-1 p-[2%] md:p-0 md:px-10">
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-4">
             <div v-for="thumb in thumbnails" class=" group relative overflow-hidden rounded bg-white hover:cursor-pointer ">
-              <img :src="`/assets/thumbnails/${thumb.imgSrc}.png`" alt="Project Image" />
+              <img class="w-full" :src="`/assets/thumbnails/${thumb.imgSrc}.png`" alt="Project Image" />
 
               <!-- Overlay that shows on hover -->
               <div @click="setDetail(thumb.imgSrc)"
