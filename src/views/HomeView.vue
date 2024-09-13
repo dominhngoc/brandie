@@ -10,44 +10,44 @@ const setDetail = (name) => {
 const thumbnails = reactive([
   {
     imgSrc: 'kuva-28',
-    title: 'kuva logo and brand identify design',
-    subTitle: 'Agency Brandie',
+    title: 'Kuva logo & brand identity design',
+    subTitle: '11-08-2024 9:41',
     like: 200,
     view: 2000
   },
   {
     imgSrc: 'tree-45',
-    title: 'kuva logo and brand identify design',
-    subTitle: 'Agency Brandie',
+    title: 'Tree shine and brand identify design',
+    subTitle: '10-08-2024 9:41',
     like: 200,
     view: 2000
   },
   {
     imgSrc: 'kizo-29',
-    title: 'kuva logo and brand identify design',
-    subTitle: 'Agency Brandie',
+    title: 'Kizo - Branding',
+    subTitle: '09-08-2024 9:41',
     like: 200,
     view: 2000
   },
   {
     imgSrc: 'latte-6',
-    title: 'kuva logo and brand identify design',
-    subTitle: 'Agency Brandie',
+    title: 'Latte design',
+    subTitle: '24-07-2024 9:41',
     like: 200,
     view: 2000
   },
  
   {
     imgSrc: 'phuc-37',
-    title: 'kuva logo and brand identify design',
-    subTitle: 'Agency Brandie',
+    title: 'Phuc and brand identify design',
+    subTitle: '22-07-2024 9:41',
     like: 200,
     view: 2000
   },
   {
     imgSrc: 'rom-56',
     title: 'kuva logo and brand identify design',
-    subTitle: 'Agency Brandie',
+    subTitle: '11-08-2024 9:41',
     like: 200,
     view: 2000
   }
@@ -432,9 +432,8 @@ const toggleOverlay = () => {
       </div>
 
       <!-- Overlay List -->
-      <transition name="fade">
         <div v-show="isOverlayOpen" @click.self="toggleOverlay"
-          class="overlay fixed inset-0 bg-black bg-opacity-85 flex justify-center items-center">
+          class="overlay fixed inset-0 bg-black bg-opacity-85 flex justify-center items-center fadeIn ">
           <div class="bg-white  rounded  h-screen overflow-y-auto w-[80%] md:w-[70%]">
             <ul>
               <li v-for="item in getDetailImage(folderName)" :key="item" class="text-gray-700">
@@ -443,7 +442,6 @@ const toggleOverlay = () => {
             </ul>
           </div>
         </div>
-      </transition>
       <!-- <div v-if="isOverlayOpen" class="fixed inset-0 bg-gray-800 bg-opacity-75 flex justify-center items-center">
             <div class="bg-white p-5 rounded shadow-lg h-full w-4/5 sm:w-3/5 lg:w-3/5">
                 <ul class="space-y-2">
@@ -574,19 +572,30 @@ const toggleOverlay = () => {
   }
 }
 
-.fade-enter-active,
-.fade-leave-active {
-  transition: opacity 0.5s;
+.fadeIn {
+  animation: fadeInAnimation 0.5s forwards;
+}
+.fadeOut {
+  animation: fadeOutAnimation 0.5s forwards;
 }
 
-.fade-enter,
-.fade-leave-to
-
-/* .fade-leave-active in Vue 2.1.8 and earlier */
-  {
-  opacity: 0;
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+ 
 }
-
+@keyframes fadeOutAnimation {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
 #element::-webkit-scrollbar {
   display: none;
 }
