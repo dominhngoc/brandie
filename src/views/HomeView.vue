@@ -80,7 +80,7 @@ const toggleOverlay = () => {
   </header>
 
   <main class="">
-    <div class="mx-auto md:flex p-4 px-[1px] mt-8 md:mt-4 md:px-[80px] min-h-screen sm:block items-center md:items-start justify-center bg-white">
+    <div class="mx-auto md:flex p-4 px-[10px] md:px-[80px] mt-8 md:mt-4  min-h-screen sm:block items-center md:items-start justify-center bg-white">
       <!-- Sidebar -->
       <div class="w-[100%] md:w-[300px] m-auto md:m-0 flex justify-center md:justify-start text-white text-center md:text-left">
         <div class="max-w-sm bg-white py-6">
@@ -515,8 +515,8 @@ const toggleOverlay = () => {
 
 @media only screen and (max-width: 768px) {
   .logo {
-    width: 18rem;
-    transform: translate(-50%, -30%);
+    width: 17rem;
+    transform: translate(-50%, -15%);
     left: 50%;
   }
 
