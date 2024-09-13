@@ -315,7 +315,7 @@ const toggleOverlay = () => {
 
           <!-- Statistics Section -->
           <div class="mt-8 text-left text-black">
-            <div class="mb-2 flex justify-between">
+            <div class="mb-2 flex justify-center space-x-2 md:justify-between">
 
               <span> <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"
                   viewBox="0 0 16 16" class="ProjectCoverNeue-icon-zWO inline-block mr-1">
@@ -325,7 +325,7 @@ const toggleOverlay = () => {
                 </svg>Tổng lượt xem</span>
               <span class="font-semibold text-gray-800">71,472</span>
             </div>
-            <div class="mb-2 flex justify-between">
+            <div class="mb-2 flex justify-center space-x-2 md:justify-between">
               <span>
                 <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0.5 0.5 16 16"
                   class="Appreciations-icon-Z4i ProjectCoverNeue-icon-zWO inline-block">
