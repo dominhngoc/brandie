@@ -53,7 +53,7 @@ const toggleOverlay = () => {
 <template>
   <header class="relative">
     <!-- Top Half: Black Background -->
-    <div class="h-[120px] w-full bg-black flex justify-end">
+    <div class="w-full bg-black flex justify-end">
       <!-- <span class="word-art word-art-position">Everything is Designed !!</span> -->
       <img src="/assets/images/bia.png" alt="Logo" />
     </div>
@@ -64,12 +64,11 @@ const toggleOverlay = () => {
 
   </header>
 
-  <body class="px-[10%] md:px-[10%] min-h-screen items-center justify-center bg-white">
-      <div class="mx-auto sm:block md:flex p-4">
+  <body class="px-[30px] mt-4 md:px-[80px] min-h-screen items-center justify-center bg-white">
+    <div class="mx-auto sm:block md:flex p-4">
       <!-- Sidebar -->
-      <div class="w-[100%] md:w-[350px] sm:m-auto  text-white text-center md:text-left">
-
-        <div class="max-w-sm bg-white p-6">
+      <div class="w-[100%] md:w-[300px] sm:m-auto flex justify-center md:justify-start text-white text-center md:text-left">
+        <div class="max-w-sm bg-white py-6">
           <div class="text-black text-2xl font-bold">Agency Brandie</div>
           <!-- Status -->
           <div
@@ -80,7 +79,7 @@ const toggleOverlay = () => {
 
           <!-- Profile Info -->
           <div>
-            <p class="text-sm text-black flex md:items-start sm:items-center">
+            <p class="text-sm text-black flex items-center md:items-start">
             <div class="icon-style">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
                 aria-labelledby="IconBase-title-4dbb2be7-c8ac-4bb5-a474-b805a6c650bd IconBase-description-4dbb2be7-c8ac-4bb5-a474-b805a6c650bd"
@@ -176,15 +175,41 @@ const toggleOverlay = () => {
             Tòa R6 Royal City, Thanh Xuân, Hà Nội</p>
             <p>
             <div class="icon-style">
-              <svg xmlns="http://www.w3.org/2000/svg" width="16px" height="14px" viewBox="0 0 24 24" fill="black" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-  <path d="M22 16.92V21a2 2 0 0 1-2.18 2A19.88 19.88 0 0 1 2 5.18 2 2 0 0 1 4 3h4.09a2 2 0 0 1 2 1.72 12.05 12.05 0 0 0 .57 2.57 2 2 0 0 1-.45 2.11L8.91 10.91a16 16 0 0 0 6.59 6.59l1.51-1.51a2 2 0 0 1 2.11-.45 12.05 12.05 0 0 0 2.57.57 2 2 0 0 1 1.72 2.01z"/>
-</svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16px" height="14px" viewBox="0 0 24 24" fill="black"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path
+                  d="M22 16.92V21a2 2 0 0 1-2.18 2A19.88 19.88 0 0 1 2 5.18 2 2 0 0 1 4 3h4.09a2 2 0 0 1 2 1.72 12.05 12.05 0 0 0 .57 2.57 2 2 0 0 1-.45 2.11L8.91 10.91a16 16 0 0 0 6.59 6.59l1.51-1.51a2 2 0 0 1 2.11-.45 12.05 12.05 0 0 0 2.57.57 2 2 0 0 1 1.72 2.01z" />
+              </svg>
 
             </div>
-            <a  class="text-black ml-1">0868379318</a>
+            <a class="text-black ml-1">0868379318</a>
             </p>
           </div>
+          <!-- call and message button  -->
+          <div class="flex flex-col items-center justify-center my-4 space-y-2">
+            <!-- Gọi ngay (Follow) Button -->
+            <button
+              class="bg-blue-600 text-white font-bold py-2 px-4 w-full text-center rounded-full flex justify-center items-center">
+              <svg class="inline-block mr-1" xmlns="http://www.w3.org/2000/svg" width="14px" height="14px"
+                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round">
+                <path
+                  d="M22 16.92V21a2 2 0 0 1-2.18 2A19.88 19.88 0 0 1 2 5.18 2 2 0 0 1 4 3h4.09a2 2 0 0 1 2 1.72 12.05 12.05 0 0 0 .57 2.57 2 2 0 0 1-.45 2.11L8.91 10.91a16 16 0 0 0 6.59 6.59l1.51-1.51a2 2 0 0 1 2.11-.45 12.05 12.05 0 0 0 2.57.57 2 2 0 0 1 1.72 2.01z" />
+              </svg>
+              Gọi ngay
+            </button>
 
+            <!-- Nhắn tin (Message) Button -->
+            <button
+              class="bg-blue-50 text-blue-600 font-bold py-2 px-4 w-full text-center rounded-full flex justify-center items-center border border-blue-200">
+              <svg class="inline-block mr-1" xmlns="http://www.w3.org/2000/svg" width="14px" height="14px"
+                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round">
+                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
+              </svg>
+              Nhắn tin
+            </button>
+          </div>
           <!-- Hire Options -->
           <!-- <div class="mt-6 text-black border-solid border-2 border-gray-100 rounded-sm p-3 hidden-mobile">
             <div class="pb-2 justify-start text-md font-semibold border-solid border-b-2 border-gray-100">Hire Eid A
@@ -286,41 +311,16 @@ const toggleOverlay = () => {
             <div class="mb-2 flex justify-between">
               <span class="text-gray-600">
                 <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0.5 0.5 16 16"
-                        class="Appreciations-icon-Z4i ProjectCoverNeue-icon-zWO inline-block">
-                        <path fill="none" d="M.5.5h16v16H.5z"></path>
-                        <path
-                          d="M.5 7.5h3v8h-3zM7.207 15.207c.193.19.425.29.677.293H12c.256 0 .512-.098.707-.293l2.5-2.5c.19-.19.288-.457.293-.707V8.5c0-.553-.445-1-1-1h-5L11 5s.5-.792.5-1.5v-1c0-.553-.447-1-1-1l-1 2-4 4v6l1.707 1.707z">
-                        </path>
-                        </svg>
+                  class="Appreciations-icon-Z4i ProjectCoverNeue-icon-zWO inline-block">
+                  <path fill="none" d="M.5.5h16v16H.5z"></path>
+                  <path
+                    d="M.5 7.5h3v8h-3zM7.207 15.207c.193.19.425.29.677.293H12c.256 0 .512-.098.707-.293l2.5-2.5c.19-.19.288-.457.293-.707V8.5c0-.553-.445-1-1-1h-5L11 5s.5-.792.5-1.5v-1c0-.553-.447-1-1-1l-1 2-4 4v6l1.707 1.707z">
+                  </path>
+                </svg>
                 Tổng lượt thích</span>
               <span class="font-semibold text-gray-800">13,580</span>
             </div>
-            <div class="mb-2 flex justify-between text-gray-800">
-              <a href="tel:0868379318" class="call-button">
-  <svg class="inline-block" xmlns="http://www.w3.org/2000/svg" width="14px" height="14px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-    <path d="M22 16.92V21a2 2 0 0 1-2.18 2A19.88 19.88 0 0 1 2 5.18 2 2 0 0 1 4 3h4.09a2 2 0 0 1 2 1.72 12.05 12.05 0 0 0 .57 2.57 2 2 0 0 1-.45 2.11L8.91 10.91a16 16 0 0 0 6.59 6.59l1.51-1.51a2 2 0 0 1 2.11-.45 12.05 12.05 0 0 0 2.57.57 2 2 0 0 1 1.72 2.01z"/>
-  </svg>
- <span> Gọi ngay cho chúng tôi</span>
-</a>
-            </div>
-            <div class="mb-4 flex justify-between text-gray-800">
-              <a href="sms:0868379318" class="message-button">
-  <svg class="inline-block" xmlns="http://www.w3.org/2000/svg" width="14px" height="14px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-    <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
-  </svg>
-  Nhắn tin
-</a>
-            </div>
-          </div>
-
-          <!-- On the Web -->
-          <div class="mt-6 hidden-mobile">
-            <h3 class="mb-2 text-lg text-black font-semibold">On The Web</h3>
-            <a href="#" class="flex items-center rounded-lg border p-2 text-black hover:bg-gray-50">
-              <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" class="mr-2 h-5 w-5"
-                alt="Instagram" />
-              Instagram
-            </a>
+           
           </div>
 
           <!-- Teams Section -->
@@ -363,27 +363,21 @@ const toggleOverlay = () => {
 
           <!-- About Me Section -->
           <div class="mt-8 text-left hidden-mobile">
-            <h3 class="mb-2 text-lg font-bold">About Me | About My Services</h3>
-            <p class="text-gray-700">Available for New Project!</p>
-            <p class="text-gray-700">Logo, Branding Identity, animations, etc</p>
-            <p class="mt-4 text-gray-700">My ultimate goal is to hear from you "I am very satisfied with your design &
-              services". You will get changes until you are 100% satisfied. I will create an awesome logo & brand
-              identity for you.</p>
-            <p class="mt-4 text-gray-500">Member since: March 30, 2019</p>
+            <p class="text-[11px] text-gray-600 leading-3 font-bold uppercase">About me | about my services</p>
+            <p class="mt-2 text-gray-700">Chúng tôi chuyên cung cấp dịch vụ xây dựng bộ nhận diện thương hiệu, thiết kế logo và tạo website chuyên nghiệp. Chúng tôi giúp doanh nghiệp tạo dấu ấn riêng, nâng cao sự nhận diện và kết nối với khách hàng một cách hiệu quả.</p>
+            <p class="mt-2 text-gray-500">Chúc bạn có trải nghiệm tuyệt vời!</p>
           </div>
         </div>
       </div>
 
       <!-- Grid -->
-      <div class="ml-4 sm:mt-0 md:mt-12 flex-1">
-        <div class="grid grid-cols-1   md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-4">
-          <div v-for="thumb in thumbnails" class="rounded bg-white  ">
-            <div class="group relative max-w-sm overflow-hidden rounded bg-white hover:cursor-pointer ">
-              <img class="w-full" :src="`/assets/thumbnails/${thumb.imgSrc}.png`"
-                alt="Project Image" />
+      <div class="ml-0 md:ml-8 sm:mt-0 md:mt-12 flex-1">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-4">
+            <div v-for="thumb in thumbnails" class=" group relative overflow-hidden rounded bg-white hover:cursor-pointer ">
+              <img :src="`/assets/thumbnails/${thumb.imgSrc}.png`" alt="Project Image" />
 
               <!-- Overlay that shows on hover -->
-              <div @click="setDetail(thumb.imgSrc)" 
+              <div @click="setDetail(thumb.imgSrc)"
                 class="absolute inset-0 flex flex-row items-end justify-center bg-black bg-opacity-50  transition-opacity duration-300 opacity-100 md:opacity-0  group-hover:opacity-100">
                 <div class="flex items-center justify-between w-full p-2 pb-3">
                   <div class="text-xs">
@@ -416,7 +410,6 @@ const toggleOverlay = () => {
                 </div>
               </div>
             </div>
-          </div>
 
         </div>
       </div>
@@ -425,7 +418,7 @@ const toggleOverlay = () => {
       <transition name="fade">
         <div v-show="isOverlayOpen" @click.self="toggleOverlay"
           class="overlay fixed inset-0 bg-black bg-opacity-85 flex justify-center items-center">
-          <div class="bg-white p-2 rounded  h-screen overflow-y-auto" style="width: 70%;">
+          <div class="bg-white  rounded  h-screen overflow-y-auto" style="width: 70%;">
             <ul>
               <li v-for="item in getDetailImage(folderName)" :key="item" class="text-gray-700">
                 <img class="w-full " :src="item" alt="Project Image" />
@@ -446,19 +439,15 @@ const toggleOverlay = () => {
 
     </div>
   </body>
-  <footer class="bg-black text-white mt-12 py-6 px-8 text-sm">
+  <footer class="bg-black text-white mt-12 px-8 text-sm">
     <div class="container mx-auto flex justify-between items-center">
-      <div class="flex items-center space-x-2">
-        <img
-          src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Adobe_Corporate_Logo.png/768px-Adobe_Corporate_Logo.png"
-          alt="Adobe Logo" class="h-6">
-        <span>&copy; 2024 Adobe Inc. All rights reserved.</span>
+      <div class="flex items-center ">
+        <img class="w-[100px] h-[auto]" src="/assets/images/Avt.png"
+          alt="Adobe Logo" >
+        <span>&copy; 2024 Brandie Inc. All rights reserved.</span>
       </div>
       <div class="flex space-x-4">
-        <a href="#" class="hover:underline">English</a>
-        <a href="#" class="hover:underline">TOU</a>
-        <a href="#" class="hover:underline">Privacy</a>
-        <a href="#" class="hover:underline">Community</a>
+        Copyright © 2024 Brandie Inc.
       </div>
     </div>
   </footer>
@@ -493,7 +482,8 @@ const toggleOverlay = () => {
 
 .logo {
   position: absolute;
-  transform: translate(280%, -60%);
+  @apply px-[80px];
+  transform: translateY(-80%);
   z-index: 10;
 }
 
@@ -502,11 +492,11 @@ const toggleOverlay = () => {
 }
 
 .logo img {
-  width: 5.5rem;
-  height: 5.5rem;
+  width: 13rem;
+  height: auto;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
   .logo {
     transform: translate(-50%, -60%);
     left: 50%;
@@ -580,10 +570,10 @@ const toggleOverlay = () => {
 }
 
 #element::-webkit-scrollbar {
-    display: none;
+  display: none;
 }
 
 ::-webkit-scrollbar {
-    display: none;
+  display: none;
 }
 </style>
