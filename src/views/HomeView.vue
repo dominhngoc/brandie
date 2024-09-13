@@ -8,6 +8,29 @@ const setDetail = (name) => {
   toggleOverlay();
 }
 const thumbnails = reactive([
+
+ 
+  {
+    imgSrc: 'phuc-37',
+    title: 'Phuc and brand identify design',
+    subTitle: '22-07-2024 9:41',
+    like: 200,
+    view: 2000
+  },
+  {
+    imgSrc: 'latte-6',
+    title: 'Latte design',
+    subTitle: '24-07-2024 9:41',
+    like: 200,
+    view: 2000
+  },
+  {
+    imgSrc: 'rom-56',
+    title: 'kuva logo and brand identify design',
+    subTitle: '11-08-2024 9:41',
+    like: 200,
+    view: 2000
+  },
   {
     imgSrc: 'kuva-28',
     title: 'Kuva logo & brand identity design',
@@ -20,28 +43,6 @@ const thumbnails = reactive([
     imgSrc: 'kizo-29',
     title: 'Kizo - Branding',
     subTitle: '09-08-2024 9:41',
-    like: 200,
-    view: 2000
-  },
-  {
-    imgSrc: 'latte-6',
-    title: 'Latte design',
-    subTitle: '24-07-2024 9:41',
-    like: 200,
-    view: 2000
-  },
- 
-  {
-    imgSrc: 'phuc-37',
-    title: 'Phuc and brand identify design',
-    subTitle: '22-07-2024 9:41',
-    like: 200,
-    view: 2000
-  },
-  {
-    imgSrc: 'rom-56',
-    title: 'kuva logo and brand identify design',
-    subTitle: '11-08-2024 9:41',
     like: 200,
     view: 2000
   }
