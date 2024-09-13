@@ -8,8 +8,6 @@ const setDetail = (name) => {
   toggleOverlay();
 }
 const thumbnails = reactive([
-
- 
   {
     imgSrc: 'phuc-37',
     title: 'Phuc and brand identify design',
@@ -45,8 +43,17 @@ const thumbnails = reactive([
     subTitle: '09-08-2024 9:41',
     like: 200,
     view: 2000
-  }
+  },
 ])
+for(let i=6 ; i<=21 ; i++){
+  thumbnails.push({
+    imgSrc: `${i}`,
+    title: 'thumb'+ i + '& brand identity design',
+    subTitle: '09-08-2024 9:41',
+    like: 200,
+    view: 2000
+  })
+}
 const getDetailImage = () => {
   const length = folderName.value.split('-')[1]
   let arr = []
