@@ -296,7 +296,7 @@ const toggleOverlay = () => {
               <span class="font-semibold text-gray-800">13,580</span>
             </div>
             <div class="mb-2 flex justify-between text-gray-800">
-              <a href="tel:+0868379318" class="call-button">
+              <a href="tel:0868379318" class="call-button">
   <svg class="inline-block" xmlns="http://www.w3.org/2000/svg" width="14px" height="14px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
     <path d="M22 16.92V21a2 2 0 0 1-2.18 2A19.88 19.88 0 0 1 2 5.18 2 2 0 0 1 4 3h4.09a2 2 0 0 1 2 1.72 12.05 12.05 0 0 0 .57 2.57 2 2 0 0 1-.45 2.11L8.91 10.91a16 16 0 0 0 6.59 6.59l1.51-1.51a2 2 0 0 1 2.11-.45 12.05 12.05 0 0 0 2.57.57 2 2 0 0 1 1.72 2.01z"/>
   </svg>
@@ -304,7 +304,7 @@ const toggleOverlay = () => {
 </a>
             </div>
             <div class="mb-4 flex justify-between text-gray-800">
-              <a href="sms:+0868379318" class="message-button">
+              <a href="sms:0868379318" class="message-button">
   <svg class="inline-block" xmlns="http://www.w3.org/2000/svg" width="14px" height="14px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
     <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
   </svg>
