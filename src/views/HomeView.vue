@@ -55,7 +55,7 @@ const toggleOverlay = () => {
     <!-- Top Half: Black Background -->
     <div class="w-full bg-black flex justify-end">
       <!-- <span class="word-art word-art-position">Everything is Designed !!</span> -->
-      <img src="/assets/images/bia.png" alt="Logo" />
+      <img class=" scale-125 md:scale-0" src="/assets/images/bia.png" alt="Logo" />
     </div>
     <div class="logo">
       <router-link to="/"> <img src="/assets/images/Avt.png" alt="Logo" /></router-link>
@@ -64,7 +64,7 @@ const toggleOverlay = () => {
 
   </header>
 
-  <body class="px-[30px] mt-4 md:px-[80px] min-h-screen items-center justify-center bg-white">
+  <body class="px-[1px] mt-8 md:mt-4 md:px-[80px] min-h-screen items-center justify-center bg-white">
     <div class="mx-auto sm:block md:flex p-4">
       <!-- Sidebar -->
       <div class="w-[100%] md:w-[300px] sm:m-auto flex justify-center md:justify-start text-white text-center md:text-left">
@@ -498,7 +498,8 @@ const toggleOverlay = () => {
 
 @media only screen and (max-width: 768px) {
   .logo {
-    transform: translate(-50%, -60%);
+    width: 18rem;
+    transform: translate(-50%, -30%);
     left: 50%;
   }
 
