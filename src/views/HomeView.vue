@@ -272,7 +272,7 @@ const toggleOverlay = () => {
           </div> -->
 
           <!-- Statistics Section -->
-          <div class="mt-8 text-left hidden-mobile">
+          <div class="mt-8 text-left">
             <div class="mb-2 flex justify-between">
 
               <span class="text-gray-600"> <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"
