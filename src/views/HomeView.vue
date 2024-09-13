@@ -1,6 +1,6 @@
 <script setup>
-import { reactive, ref,  } from 'vue'
-const isOverlayOpen =ref(false)
+import { reactive, ref, } from 'vue'
+const isOverlayOpen = ref(false)
 
 const folderName = ref("");
 const setDetail = (name) => {
@@ -8,12 +8,39 @@ const setDetail = (name) => {
   toggleOverlay();
 }
 const thumbnails = reactive([
-  'kuva-28','kizo-29', 'latte-6',  'tree-45'
+  {
+    imgSrc: 'kuva-28',
+    title: 'kuva logo and brand identify design',
+    subTitle: 'Agency Brandie',
+    like: 200,
+    view: 2000
+  },
+  {
+    imgSrc: 'kizo-29',
+    title: 'kuva logo and brand identify design',
+    subTitle: 'Agency Brandie',
+    like: 200,
+    view: 2000
+  },
+  {
+    imgSrc: 'latte-6',
+    title: 'kuva logo and brand identify design',
+    subTitle: 'Agency Brandie',
+    like: 200,
+    view: 2000
+  },
+  {
+    imgSrc: 'tree-45',
+    title: 'kuva logo and brand identify design',
+    subTitle: 'Agency Brandie',
+    like: 200,
+    view: 2000
+  }
 ])
 const getDetailImage = () => {
   const length = folderName.value.split('-')[1]
   let arr = []
-  for(let i = 1; i <= length ; i++){
+  for (let i = 1; i <= length; i++) {
     arr.push(`/assets/images/${folderName.value}/${i}.png`)
   }
   return arr
@@ -27,23 +54,23 @@ const toggleOverlay = () => {
   <header class="relative">
     <!-- Top Half: Black Background -->
     <div class="h-[120px] w-full bg-black flex justify-end">
-      <span class="word-art word-art-position">Everything is Designed !!</span>
+      <!-- <span class="word-art word-art-position">Everything is Designed !!</span> -->
+      <img src="/assets/images/bia.png" alt="Logo" />
     </div>
     <div class="logo">
-          <router-link to="/"> <img src="@/assets/images/logo.jpg" alt="Logo"
-              class=" rounded-full border-white border-4" /></router-link>
+      <router-link to="/"> <img src="/assets/images/Avt.png" alt="Logo" /></router-link>
     </div>
     <!-- Moved Logo to the Left -->
 
   </header>
 
-  <body class="flex px-10 min-h-screen items-center justify-center bg-white">
-    <div class=" relative mx-auto container-main sm:block md:flex p-4">
+  <body class="px-[10%] md:px-[10%] min-h-screen items-center justify-center bg-white">
+      <div class="mx-auto sm:block md:flex p-4">
       <!-- Sidebar -->
       <div class="w-[100%] md:w-[350px] sm:m-auto  text-white text-center md:text-left">
-        
+
         <div class="max-w-sm bg-white p-6">
-          <div class="text-black text-2xl font-bold">Eid A Amin Juwel</div>
+          <div class="text-black text-2xl font-bold">Agency Brandie</div>
           <!-- Status -->
           <div
             class="px-3 py-2 w-fit flex text-sm bg-green-100 items-center rounded-xl m-auto md:m-0 md:mx-0 md:my-2 md:mb-4 ">
@@ -53,7 +80,7 @@ const toggleOverlay = () => {
 
           <!-- Profile Info -->
           <div>
-            <p class="mb-2 text-sm text-black flex md:items-start sm:items-center">
+            <p class="text-sm text-black flex md:items-start sm:items-center">
             <div class="icon-style">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
                 aria-labelledby="IconBase-title-4dbb2be7-c8ac-4bb5-a474-b805a6c650bd IconBase-description-4dbb2be7-c8ac-4bb5-a474-b805a6c650bd"
@@ -71,8 +98,7 @@ const toggleOverlay = () => {
                 </g>
               </svg>
             </div>
-            Logo & Brand Identity Designer | let's talk about your project----WeChat or WhatsApp For Quick Response:
-            +8801795063000:
+            <span class="ml-1 inline-block">Agency thiết kế Logo & Bộ nhận diện thương hiệu</span>
             </p>
 
             <p class="font-medium text-black"><a href="mailto:eidaamin.work@gmail.com">
@@ -114,7 +140,7 @@ const toggleOverlay = () => {
                     </g>
                   </svg>
                 </div>
-                eidaamin.work@gmail.com
+                agencybrandie@gmail.com
               </a></p>
             <p class="text-gray-600">
             <div class="icon-style">
@@ -147,31 +173,20 @@ const toggleOverlay = () => {
                 </g>
               </svg>
             </div>
-            Bangladesh</p>
+            Tòa R6 Royal City, Thanh Xuân, Hà Nội</p>
             <p>
             <div class="icon-style">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
-                aria-labelledby="IconBase-title-4dbb2be7-c8ac-4bb5-a474-b805a6c650bd IconBase-description-4dbb2be7-c8ac-4bb5-a474-b805a6c650bd"
-                role="graphics-symbol img" width="100%" height="100%" class="ProfileCard-infoIcon-wVi">
-                <title id="IconBase-title-4dbb2be7-c8ac-4bb5-a474-b805a6c650bd">Info</title>
-                <desc id="IconBase-description-4dbb2be7-c8ac-4bb5-a474-b805a6c650bd"></desc>
-                <g><!--[-->
-                  <path
-                    d="M11.875,14.375H11.25A1.877,1.877,0,0,1,9.375,12.5V9.375H8.75a.625.625,0,0,1,0-1.25h.625a1.251,1.251,0,0,1,1.25,1.25V12.5a.626.626,0,0,0,.625.625h.625a.625.625,0,0,1,0,1.25Z">
-                  </path>
-                  <path d="M9.687,6.875a.938.938,0,1,1,.938-.937A.939.939,0,0,1,9.687,6.875Z"></path>
-                  <path
-                    d="M10,0A10,10,0,1,1,0,10,10.011,10.011,0,0,1,10,0Zm0,18.75A8.75,8.75,0,1,0,1.25,10,8.76,8.76,0,0,0,10,18.75Z">
-                  </path><!--]-->
-                </g>
-              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16px" height="14px" viewBox="0 0 24 24" fill="black" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M22 16.92V21a2 2 0 0 1-2.18 2A19.88 19.88 0 0 1 2 5.18 2 2 0 0 1 4 3h4.09a2 2 0 0 1 2 1.72 12.05 12.05 0 0 0 .57 2.57 2 2 0 0 1-.45 2.11L8.91 10.91a16 16 0 0 0 6.59 6.59l1.51-1.51a2 2 0 0 1 2.11-.45 12.05 12.05 0 0 0 2.57.57 2 2 0 0 1 1.72 2.01z"/>
+</svg>
+
             </div>
-            <a href="https://wa.me/+8801795063000" class="text-black underline">wa.me/+8801795063000</a>
+            <a  class="text-black ml-1">0868379318</a>
             </p>
           </div>
 
           <!-- Hire Options -->
-          <div class="mt-6 text-black border-solid border-2 border-gray-100 rounded-sm p-3 hidden-mobile">
+          <!-- <div class="mt-6 text-black border-solid border-2 border-gray-100 rounded-sm p-3 hidden-mobile">
             <div class="pb-2 justify-start text-md font-semibold border-solid border-b-2 border-gray-100">Hire Eid A
               Amin</div>
             <div class="space-y-2">
@@ -254,25 +269,47 @@ const toggleOverlay = () => {
               </div>
 
             </div>
-          </div>
+          </div> -->
 
           <!-- Statistics Section -->
           <div class="mt-8 text-left hidden-mobile">
             <div class="mb-2 flex justify-between">
-              <span class="text-gray-600">Project Views</span>
+
+              <span class="text-gray-600"> <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"
+                  viewBox="0 0 16 16" class="ProjectCoverNeue-icon-zWO inline-block mr-1">
+                  <path
+                    d="M8.5 3.5c-5 0-8 5-8 5s3 5 8 5 8-5 8-5-3-5-8-5zm0 7c-1.105 0-2-.896-2-2 0-1.106.895-2 2-2 1.104 0 2 .894 2 2 0 1.104-.896 2-2 2z">
+                  </path>
+                </svg>Tổng lượt xem</span>
               <span class="font-semibold text-gray-800">71,472</span>
             </div>
             <div class="mb-2 flex justify-between">
-              <span class="text-gray-600">Appreciations</span>
+              <span class="text-gray-600">
+                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0.5 0.5 16 16"
+                        class="Appreciations-icon-Z4i ProjectCoverNeue-icon-zWO inline-block">
+                        <path fill="none" d="M.5.5h16v16H.5z"></path>
+                        <path
+                          d="M.5 7.5h3v8h-3zM7.207 15.207c.193.19.425.29.677.293H12c.256 0 .512-.098.707-.293l2.5-2.5c.19-.19.288-.457.293-.707V8.5c0-.553-.445-1-1-1h-5L11 5s.5-.792.5-1.5v-1c0-.553-.447-1-1-1l-1 2-4 4v6l1.707 1.707z">
+                        </path>
+                        </svg>
+                Tổng lượt thích</span>
               <span class="font-semibold text-gray-800">13,580</span>
             </div>
-            <div class="mb-2 flex justify-between">
-              <span class="text-gray-600">Followers</span>
-              <span class="font-semibold text-gray-800">2,963</span>
+            <div class="mb-2 flex justify-between text-gray-800">
+              <a href="tel:+0868379318" class="call-button">
+  <svg class="inline-block" xmlns="http://www.w3.org/2000/svg" width="14px" height="14px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M22 16.92V21a2 2 0 0 1-2.18 2A19.88 19.88 0 0 1 2 5.18 2 2 0 0 1 4 3h4.09a2 2 0 0 1 2 1.72 12.05 12.05 0 0 0 .57 2.57 2 2 0 0 1-.45 2.11L8.91 10.91a16 16 0 0 0 6.59 6.59l1.51-1.51a2 2 0 0 1 2.11-.45 12.05 12.05 0 0 0 2.57.57 2 2 0 0 1 1.72 2.01z"/>
+  </svg>
+ <span> Gọi ngay cho chúng tôi</span>
+</a>
             </div>
-            <div class="mb-4 flex justify-between">
-              <span class="text-gray-600">Following</span>
-              <span class="font-semibold text-gray-800">7,001</span>
+            <div class="mb-4 flex justify-between text-gray-800">
+              <a href="sms:+0868379318" class="message-button">
+  <svg class="inline-block" xmlns="http://www.w3.org/2000/svg" width="14px" height="14px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+  </svg>
+  Nhắn tin
+</a>
             </div>
           </div>
 
@@ -339,47 +376,65 @@ const toggleOverlay = () => {
 
       <!-- Grid -->
       <div class="ml-4 sm:mt-0 md:mt-12 flex-1">
-        <div class="grid grid-cols-1 max-h-screen  md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-10">
+        <div class="grid grid-cols-1   md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-4">
           <div v-for="thumb in thumbnails" class="rounded bg-white  ">
-            <div
-              class="group relative max-w-sm overflow-hidden rounded bg-white  hover:cursor-pointer zoom hover:scale-110 ">
-              <img @click="setDetail(thumb)" class="w-full" :src="`/assets/thumbnails/${thumb}.png`" alt="Project Image" />
+            <div class="group relative max-w-sm overflow-hidden rounded bg-white hover:cursor-pointer ">
+              <img class="w-full" :src="`/assets/thumbnails/${thumb.imgSrc}.png`"
+                alt="Project Image" />
 
               <!-- Overlay that shows on hover -->
-              <!-- <div
-                class="absolute inset-0 flex flex-col items-center justify-center bg-black bg-opacity-50 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-                <div class="mb-2 text-xl font-bold text-white">Kizo - Branding</div>
-                <p class="text-base text-gray-300">Eid A Amin Juwel</p>
-                <div class="mt-4 flex items-center justify-between space-x-6">
-                  <div class="flex items-center space-x-2 fill-white">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0.5 0.5 16 16" class="Appreciations-icon-Z4i ProjectCoverNeue-icon-zWO"><path fill="none" d="M.5.5h16v16H.5z"></path><path d="M.5 7.5h3v8h-3zM7.207 15.207c.193.19.425.29.677.293H12c.256 0 .512-.098.707-.293l2.5-2.5c.19-.19.288-.457.293-.707V8.5c0-.553-.445-1-1-1h-5L11 5s.5-.792.5-1.5v-1c0-.553-.447-1-1-1l-1 2-4 4v6l1.707 1.707z"></path></svg>
-                    <span class="text-sm text-gray-300">71</span>
+              <div @click="setDetail(thumb.imgSrc)" 
+                class="absolute inset-0 flex flex-row items-end justify-center bg-black bg-opacity-50  transition-opacity duration-300 opacity-100 md:opacity-0  group-hover:opacity-100">
+                <div class="flex items-center justify-between w-full p-2 pb-3">
+                  <div class="text-xs">
+                    <div class="font-bold text-white">{{ thumb.title }}
+                    </div>
+                    <p class="text-gray-100">{{ thumb.subTitle }}</p>
                   </div>
-                  <div class="flex items-center space-x-2 fill-white">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" class="ProjectCoverNeue-icon-zWO"><path d="M8.5 3.5c-5 0-8 5-8 5s3 5 8 5 8-5 8-5-3-5-8-5zm0 7c-1.105 0-2-.896-2-2 0-1.106.895-2 2-2 1.104 0 2 .894 2 2 0 1.104-.896 2-2 2z"></path></svg>
-                    <span class="text-sm text-gray-300">97</span>
+
+                  <div class="mt-4 flex items-center space-x-2">
+                    <div class="flex items-center space-x-1  fill-white">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0.5 0.5 16 16"
+                        class="Appreciations-icon-Z4i ProjectCoverNeue-icon-zWO">
+                        <path fill="none" d="M.5.5h16v16H.5z"></path>
+                        <path
+                          d="M.5 7.5h3v8h-3zM7.207 15.207c.193.19.425.29.677.293H12c.256 0 .512-.098.707-.293l2.5-2.5c.19-.19.288-.457.293-.707V8.5c0-.553-.445-1-1-1h-5L11 5s.5-.792.5-1.5v-1c0-.553-.447-1-1-1l-1 2-4 4v6l1.707 1.707z">
+                        </path>
+                      </svg>
+                      <span class="text-xs text-gray-300">{{ thumb.like }}</span>
+                    </div>
+                    <div class="flex items-center space-x-1 fill-white">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 16 16"
+                        class="ProjectCoverNeue-icon-zWO">
+                        <path
+                          d="M8.5 3.5c-5 0-8 5-8 5s3 5 8 5 8-5 8-5-3-5-8-5zm0 7c-1.105 0-2-.896-2-2 0-1.106.895-2 2-2 1.104 0 2 .894 2 2 0 1.104-.896 2-2 2z">
+                        </path>
+                      </svg>
+                      <span class="text-xs text-gray-300"> {{ thumb.view }}</span>
+                    </div>
                   </div>
                 </div>
-              </div> -->
+              </div>
             </div>
           </div>
 
         </div>
       </div>
-    
-       <!-- Overlay List -->
-       <transition name="fade">
-       <div v-show="isOverlayOpen" @click.self="toggleOverlay" class="overlay fixed inset-0 bg-black bg-opacity-85 flex justify-center items-center">
-            <div class="bg-white p-5 rounded  h-screen overflow-y-auto" style="width: 70%;">
-                <ul class="space-y-2">
-                  <li v-for="item in getDetailImage(folderName)" :key="item" class="text-gray-700">
-                      <img class="w-full " :src="item" alt="Project Image" />
-                    </li>
-                </ul>
-            </div>
+
+      <!-- Overlay List -->
+      <transition name="fade">
+        <div v-show="isOverlayOpen" @click.self="toggleOverlay"
+          class="overlay fixed inset-0 bg-black bg-opacity-85 flex justify-center items-center">
+          <div class="bg-white p-2 rounded  h-screen overflow-y-auto" style="width: 70%;">
+            <ul>
+              <li v-for="item in getDetailImage(folderName)" :key="item" class="text-gray-700">
+                <img class="w-full " :src="item" alt="Project Image" />
+              </li>
+            </ul>
+          </div>
         </div>
-        </transition>
-       <!-- <div v-if="isOverlayOpen" class="fixed inset-0 bg-gray-800 bg-opacity-75 flex justify-center items-center">
+      </transition>
+      <!-- <div v-if="isOverlayOpen" class="fixed inset-0 bg-gray-800 bg-opacity-75 flex justify-center items-center">
             <div class="bg-white p-5 rounded shadow-lg h-full w-4/5 sm:w-3/5 lg:w-3/5">
                 <ul class="space-y-2">
                     <li v-for="i in 29" :key="item" class="text-gray-700">
@@ -391,10 +446,12 @@ const toggleOverlay = () => {
 
     </div>
   </body>
-   <footer class="bg-black text-white py-6 px-8 text-sm">
+  <footer class="bg-black text-white mt-12 py-6 px-8 text-sm">
     <div class="container mx-auto flex justify-between items-center">
       <div class="flex items-center space-x-2">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Adobe_Corporate_Logo.png/768px-Adobe_Corporate_Logo.png" alt="Adobe Logo" class="h-6">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Adobe_Corporate_Logo.png/768px-Adobe_Corporate_Logo.png"
+          alt="Adobe Logo" class="h-6">
         <span>&copy; 2024 Adobe Inc. All rights reserved.</span>
       </div>
       <div class="flex space-x-4">
@@ -436,20 +493,23 @@ const toggleOverlay = () => {
 
 .logo {
   position: absolute;
-  transform: translate(80%, -60%);
+  transform: translate(280%, -60%);
   z-index: 10;
 }
+
 .overlay {
   z-index: 99;
 }
+
 .logo img {
   width: 5.5rem;
   height: 5.5rem;
 }
+
 @media only screen and (max-width: 600px) {
   .logo {
     transform: translate(-50%, -60%);
-    left:50%;
+    left: 50%;
   }
 
 
@@ -478,15 +538,18 @@ const toggleOverlay = () => {
     6px 6px 0 rgba(0, 0, 0, 0.5);
   /* 3D effect */
 }
+
 .word-art-position {
   margin-right: 10%;
   margin-top: 20px;
 }
+
 @media only screen and (max-width: 600px) {
   .word-art {
     font-size: 12px;
   }
 }
+
 /* @media only screen and (max-width: 1920px) {
  .container-main {
   display: flex;
@@ -503,12 +566,24 @@ const toggleOverlay = () => {
   }
 }
 
-.fade-enter-active, .fade-leave-active {
+.fade-enter-active,
+.fade-leave-active {
   transition: opacity 0.5s;
 }
 
-.fade-enter, .fade-leave-to /* .fade-leave-active in Vue 2.1.8 and earlier */ {
+.fade-enter,
+.fade-leave-to
+
+/* .fade-leave-active in Vue 2.1.8 and earlier */
+  {
   opacity: 0;
 }
 
+#element::-webkit-scrollbar {
+    display: none;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
 </style>
