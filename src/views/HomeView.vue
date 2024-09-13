@@ -15,13 +15,7 @@ const thumbnails = reactive([
     like: 200,
     view: 2000
   },
-  {
-    imgSrc: 'tree-45',
-    title: 'Tree shine and brand identify design',
-    subTitle: '10-08-2024 9:41',
-    like: 200,
-    view: 2000
-  },
+ 
   {
     imgSrc: 'kizo-29',
     title: 'Kizo - Branding',
@@ -388,7 +382,7 @@ const toggleOverlay = () => {
       </div>
 
       <!-- Grid -->
-      <div class="ml-0 md:ml-8 sm:mt-0 md:mt-12 flex-1 p-[2%] md:p-0">
+      <div class="ml-0 md:ml-8 sm:mt-0 md:mt-12 flex-1 p-[2%] md:p-0 md:px-10">
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-4">
             <div v-for="thumb in thumbnails" class=" group relative overflow-hidden rounded bg-white hover:cursor-pointer ">
               <img :src="`/assets/thumbnails/${thumb.imgSrc}.png`" alt="Project Image" />
