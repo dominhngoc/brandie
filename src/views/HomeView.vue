@@ -5,7 +5,10 @@ const isOverlayOpen = ref(false)
 const folderName = ref("");
 const setDetail = (name) => {
   folderName.value = name;
-  toggleOverlay();
+  const length = folderName.value.split('-')[1]
+  if(length && length > 0){
+    toggleOverlay();
+  }
 }
 const thumbnails = reactive([
   {
