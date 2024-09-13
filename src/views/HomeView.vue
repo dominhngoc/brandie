@@ -16,6 +16,13 @@ const thumbnails = reactive([
     view: 2000
   },
   {
+    imgSrc: 'tree-45',
+    title: 'kuva logo and brand identify design',
+    subTitle: 'Agency Brandie',
+    like: 200,
+    view: 2000
+  },
+  {
     imgSrc: 'kizo-29',
     title: 'kuva logo and brand identify design',
     subTitle: 'Agency Brandie',
@@ -29,8 +36,16 @@ const thumbnails = reactive([
     like: 200,
     view: 2000
   },
+ 
   {
-    imgSrc: 'tree-45',
+    imgSrc: 'phuc-37',
+    title: 'kuva logo and brand identify design',
+    subTitle: 'Agency Brandie',
+    like: 200,
+    view: 2000
+  },
+  {
+    imgSrc: 'rom-56',
     title: 'kuva logo and brand identify design',
     subTitle: 'Agency Brandie',
     like: 200,
@@ -53,9 +68,9 @@ const toggleOverlay = () => {
 <template>
   <header class="relative">
     <!-- Top Half: Black Background -->
-    <div class="w-full bg-black flex justify-end">
+    <div class="w-full bg-black flex justify-end overflow-hidden">
       <!-- <span class="word-art word-art-position">Everything is Designed !!</span> -->
-      <img class=" scale-125 md:scale-0" src="/assets/images/bia.png" alt="Logo" />
+      <img class="w-full object-fill scale-125 md:scale-100" src="/assets/images/bia.png" alt="Logo" />
     </div>
     <div class="logo">
       <router-link to="/"> <img src="/assets/images/Avt.png" alt="Logo" /></router-link>
@@ -64,22 +79,22 @@ const toggleOverlay = () => {
 
   </header>
 
-  <body class="px-[1px] mt-8 md:mt-4 md:px-[80px] min-h-screen items-center justify-center bg-white">
-    <div class="mx-auto sm:block md:flex p-4">
+  <main class="">
+    <div class="mx-auto md:flex p-4 px-[1px] mt-8 md:mt-4 md:px-[80px] min-h-screen sm:block items-center md:items-start justify-center bg-white">
       <!-- Sidebar -->
-      <div class="w-[100%] md:w-[300px] sm:m-auto flex justify-center md:justify-start text-white text-center md:text-left">
+      <div class="w-[100%] md:w-[300px] m-auto md:m-0 flex justify-center md:justify-start text-white text-center md:text-left">
         <div class="max-w-sm bg-white py-6">
-          <div class="text-black text-2xl font-bold">Agency Brandie</div>
+          <div class="text-black text-2xl font-bold mt-2">Agency Brandie</div>
           <!-- Status -->
           <div
-            class="px-3 py-2 w-fit flex text-sm bg-green-100 items-center rounded-xl m-auto md:m-0 md:mx-0 md:my-2 md:mb-4 ">
+            class="px-3 py-2 w-fit flex text-sm bg-green-100 items-center rounded-xl m-auto md:m-0 md:mx-0 my-2 md:mb-4 ">
             <span class="mr-1 h-1 w-1 rounded-full bg-green-500"></span>
             <span class="text-green-300 font-semibold	">Available Now</span>
           </div>
 
           <!-- Profile Info -->
-          <div>
-            <p class="text-sm text-black flex items-center md:items-start">
+          <div class="text-black">
+            <p class="flex items-center md:items-start">
             <div class="icon-style">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
                 aria-labelledby="IconBase-title-4dbb2be7-c8ac-4bb5-a474-b805a6c650bd IconBase-description-4dbb2be7-c8ac-4bb5-a474-b805a6c650bd"
@@ -97,10 +112,10 @@ const toggleOverlay = () => {
                 </g>
               </svg>
             </div>
-            <span class="ml-1 inline-block">Agency thiết kế Logo & Bộ nhận diện thương hiệu</span>
+            <p class="ml-1">Agency thiết kế Logo & Bộ nhận diện thương hiệu</p>
             </p>
 
-            <p class="font-medium text-black"><a href="mailto:eidaamin.work@gmail.com">
+            <p >
                 <div class="icon-style">
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1234.27 1080"
                     aria-labelledby="IconBase-title-f03eec97-82d0-416d-b7e7-dd7b45427661 IconBase-description-f03eec97-82d0-416d-b7e7-dd7b45427661"
@@ -140,8 +155,8 @@ const toggleOverlay = () => {
                   </svg>
                 </div>
                 agencybrandie@gmail.com
-              </a></p>
-            <p class="text-gray-600">
+             </p>
+            <p>
             <div class="icon-style">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
                 aria-labelledby="IconBase-title-df59dbea-af75-46ea-8a7a-f675cacb836f IconBase-description-df59dbea-af75-46ea-8a7a-f675cacb836f"
@@ -175,19 +190,20 @@ const toggleOverlay = () => {
             Tòa R6 Royal City, Thanh Xuân, Hà Nội</p>
             <p>
             <div class="icon-style">
-              <svg xmlns="http://www.w3.org/2000/svg" width="16px" height="14px" viewBox="0 0 24 24" fill="black"
+              <svg xmlns="http://www.w3.org/2000/svg" width="16px" height="14px" viewBox="0 0 24 24" fill="white"
                 stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                 <path
                   d="M22 16.92V21a2 2 0 0 1-2.18 2A19.88 19.88 0 0 1 2 5.18 2 2 0 0 1 4 3h4.09a2 2 0 0 1 2 1.72 12.05 12.05 0 0 0 .57 2.57 2 2 0 0 1-.45 2.11L8.91 10.91a16 16 0 0 0 6.59 6.59l1.51-1.51a2 2 0 0 1 2.11-.45 12.05 12.05 0 0 0 2.57.57 2 2 0 0 1 1.72 2.01z" />
               </svg>
 
             </div>
-            <a class="text-black ml-1">0868379318</a>
+            <a class="ml-1">0868379318</a>
             </p>
           </div>
           <!-- call and message button  -->
           <div class="flex flex-col items-center justify-center my-4 space-y-2">
             <!-- Gọi ngay (Follow) Button -->
+             <a href="tel:0868379318" class="w-full">
             <button
               class="bg-blue-600 text-white font-bold py-2 px-4 w-full text-center rounded-full flex justify-center items-center">
               <svg class="inline-block mr-1" xmlns="http://www.w3.org/2000/svg" width="14px" height="14px"
@@ -198,9 +214,9 @@ const toggleOverlay = () => {
               </svg>
               Gọi ngay
             </button>
-
+          </a>
             <!-- Nhắn tin (Message) Button -->
-            <button
+            <a href="sms:0868379318" class=" w-full"> <button
               class="bg-blue-50 text-blue-600 font-bold py-2 px-4 w-full text-center rounded-full flex justify-center items-center border border-blue-200">
               <svg class="inline-block mr-1" xmlns="http://www.w3.org/2000/svg" width="14px" height="14px"
                 viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
@@ -208,7 +224,8 @@ const toggleOverlay = () => {
                 <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
               </svg>
               Nhắn tin
-            </button>
+            </button></a>
+           
           </div>
           <!-- Hire Options -->
           <!-- <div class="mt-6 text-black border-solid border-2 border-gray-100 rounded-sm p-3 hidden-mobile">
@@ -297,10 +314,10 @@ const toggleOverlay = () => {
           </div> -->
 
           <!-- Statistics Section -->
-          <div class="mt-8 text-left">
+          <div class="mt-8 text-left text-black">
             <div class="mb-2 flex justify-between">
 
-              <span class="text-gray-600"> <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"
+              <span> <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"
                   viewBox="0 0 16 16" class="ProjectCoverNeue-icon-zWO inline-block mr-1">
                   <path
                     d="M8.5 3.5c-5 0-8 5-8 5s3 5 8 5 8-5 8-5-3-5-8-5zm0 7c-1.105 0-2-.896-2-2 0-1.106.895-2 2-2 1.104 0 2 .894 2 2 0 1.104-.896 2-2 2z">
@@ -309,7 +326,7 @@ const toggleOverlay = () => {
               <span class="font-semibold text-gray-800">71,472</span>
             </div>
             <div class="mb-2 flex justify-between">
-              <span class="text-gray-600">
+              <span>
                 <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0.5 0.5 16 16"
                   class="Appreciations-icon-Z4i ProjectCoverNeue-icon-zWO inline-block">
                   <path fill="none" d="M.5.5h16v16H.5z"></path>
@@ -363,15 +380,15 @@ const toggleOverlay = () => {
 
           <!-- About Me Section -->
           <div class="mt-8 text-left hidden-mobile">
-            <p class="text-[11px] text-gray-600 leading-3 font-bold uppercase">About me | about my services</p>
+            <p class="text-[11px] text-black leading-3 font-bold uppercase">About me | about my services</p>
             <p class="mt-2 text-gray-700">Chúng tôi chuyên cung cấp dịch vụ xây dựng bộ nhận diện thương hiệu, thiết kế logo và tạo website chuyên nghiệp. Chúng tôi giúp doanh nghiệp tạo dấu ấn riêng, nâng cao sự nhận diện và kết nối với khách hàng một cách hiệu quả.</p>
-            <p class="mt-2 text-gray-500">Chúc bạn có trải nghiệm tuyệt vời!</p>
+            <p class="mt-2 text-black">Chúc bạn có trải nghiệm tuyệt vời!</p>
           </div>
         </div>
       </div>
 
       <!-- Grid -->
-      <div class="ml-0 md:ml-8 sm:mt-0 md:mt-12 flex-1">
+      <div class="ml-0 md:ml-8 sm:mt-0 md:mt-12 flex-1 p-[2%] md:p-0">
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-4">
             <div v-for="thumb in thumbnails" class=" group relative overflow-hidden rounded bg-white hover:cursor-pointer ">
               <img :src="`/assets/thumbnails/${thumb.imgSrc}.png`" alt="Project Image" />
@@ -418,7 +435,7 @@ const toggleOverlay = () => {
       <transition name="fade">
         <div v-show="isOverlayOpen" @click.self="toggleOverlay"
           class="overlay fixed inset-0 bg-black bg-opacity-85 flex justify-center items-center">
-          <div class="bg-white  rounded  h-screen overflow-y-auto" style="width: 70%;">
+          <div class="bg-white  rounded  h-screen overflow-y-auto w-[80%] md:w-[70%]">
             <ul>
               <li v-for="item in getDetailImage(folderName)" :key="item" class="text-gray-700">
                 <img class="w-full " :src="item" alt="Project Image" />
@@ -438,7 +455,7 @@ const toggleOverlay = () => {
         </div> -->
 
     </div>
-  </body>
+  </main>
   <footer class="bg-black text-white mt-12 px-8 text-sm">
     <div class="container mx-auto flex justify-between items-center">
       <div class="flex items-center ">
